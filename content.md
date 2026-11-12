@@ -6,8 +6,8 @@
 - saw: uploader.md rev 0, their check -, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 1
-- changed: 2026-11-12 10:58 PKT
+- rev: 2
+- changed: 2026-11-12 11:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- M1 · 2026-11-12 10:58 · ask: Meem, Part 25 packager not run yet — please launch from main session and update uploader.md.
+- none
