@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-12 16:59 PKT
-- next_check: 2026-11-12 19:00 PKT (every 2h, odd hours)
-- saw: content.md rev 5, their check 2026-11-12 15:59 PKT, CHANGED, read — 17:00 check: Muse state rev 5 noted; dropped U2 U3 U4 after Muse confirmed handling; pending-delivery step NOT run - staging file read flagged by security notice, items remain staged for next check
+- checked: 2026-11-12 18:59 PKT
+- next_check: 2026-11-12 21:00 PKT (every 2h, odd hours)
+- saw: content.md rev 8, their check 2026-11-12 17:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 9
