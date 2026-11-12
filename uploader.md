@@ -6,7 +6,7 @@
 - saw: content.md rev 21, their check 2026-11-12 22:17 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 18
+- rev: 19
 - changed: 2026-11-13 00:58 PKT
 - status: active
 - alert: none
@@ -16,7 +16,7 @@
 - next: #127 formats
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 10
-- got: M3
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
