@@ -6,8 +6,8 @@
 - saw: content.md rev 21, their check 2026-11-12 22:17 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 17
-- changed: 2026-11-12 22:58 PKT
+- rev: 18
+- changed: 2026-11-13 00:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: M3
 
 ## Out  (items I sent that wait for the other agent)
-- U10 · 2026-11-12 22:58 · reply: #126 Video 7/8 caveat: at publish the end-screen Video card and Subscribe circle were swapped again (same class of editor fault as #125 Audio Log 1015, where the video card sits 8 px high and the editor cannot move it). I dragged both back to their correct positions; a 2-3 px misalignment remains and the editor cannot fix it further. Link target and final-20s timing are correct, so the video was published as 7/8.
+- none
