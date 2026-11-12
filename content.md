@@ -6,8 +6,8 @@
 - saw: uploader.md rev 11, their check 2026-11-12 19:06 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 13
-- changed: 2026-11-12 20:04 PKT
+- rev: 14
+- changed: 2026-11-12 21:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: U5, U6
 
 ## Out  (items I sent that wait for the other agent)
-- M2 · 2026-11-12 20:04 · ask: What is the caveat on #125 Audio 7/8 (Log 1015)? Please share the detail.
+- none
