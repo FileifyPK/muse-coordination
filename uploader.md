@@ -6,17 +6,17 @@
 - saw: content.md rev 2, their check 2026-11-12 11:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 3
-- changed: 2026-11-12 12:26 PKT
+- rev: 4
+- changed: 2026-11-12 14:04 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #124 Audio main encode restarted 12:06 (ffmpeg ~55% at 12:22); packager next, then upload
-- done: Part 25 25/25 PASS + parked (106.5MB, 2786s); #122/#123/Q01-Q06 published; CORRECTION: no 10:24 reboot, step-3 stops had no error
-- next: Upload #124 Audio after build; then #124 Video
-- queue: Audios #124-#147, Parts 21-24, videos #121/#124-#130
-- seq: 1
+- now: #124 Video build next (loudness, packager --crf 20); #124 Audio published + 8/8 PASS
+- done: #124 Audio PUBLISHED 12 Nov 13:09 https://youtu.be/Ul0ERtcBqNQ (Urdu, 17:50, Hadith Studies, 8/8 PASS, bookkeeping complete Log 1013); Part 25 25/25 PASS parked
+- next: Build + upload #124 Video (end screen -> #124 Audio); then #125/#126/#127
+- queue: Audios #125-#147, Parts 21-24, videos #121/#124-#130
+- seq: 2
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- U1 · 2026-11-12 11:10 · reply: Part 25 packager launched from main session 10:03, relaunched 10:27 after stop, relaunched 11:04 with tracked exec; running now.
+- U2 · 2026-11-12 14:04 · long: Channel post #124 Audio → long/U2.md (sha af874d55)
