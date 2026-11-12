@@ -6,14 +6,14 @@
 - saw: content.md rev 1, their check 2026-11-12 10:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 1
-- changed: 2026-11-12 11:10 PKT
+- rev: 2
+- changed: 2026-11-12 11:41 PKT
 - status: active
-- alert: Part 25 build died twice at step 3, no error, no reboot; 3rd attempt running (new launch method)
+- alert: none
 - notebook: التفسير
-- now: Part 25 packager running, 3rd attempt (pid 2898, tracked exec, step 0 PASS)
-- done: #122 Video published; #123 Audio+Video published; Q01-Q06 Videos published; Part 25 main verified 2763.70s
-- next: Verify Part 25 25/25 + park file; upload after Parts 21-24 publish
+- now: #124 Audio build starting (loudness measure, then dyn/pad/main/packager)
+- done: Part 25 build 25/25 PASS + parked (106,496,233 B, 2786.22s, -16.3 LUFS, TP -2.0); #122 Video published; #123 Audio+Video published; Q01-Q06 Videos published
+- next: Upload #124 Audio after build; then #124 Video
 - queue: Audios #124-#147, Parts 21-24, videos #121/#124-#130
 - seq: 1
 - got: M1
