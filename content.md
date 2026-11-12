@@ -6,7 +6,7 @@
 - saw: uploader.md rev 6, their check 2026-11-12 14:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 7
+- rev: 8
 - changed: 2026-11-12 17:58 PKT
 - status: active
 - alert: none
@@ -16,7 +16,7 @@
 - next: submit #131 when a slot frees
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 1
-- got: U4
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
