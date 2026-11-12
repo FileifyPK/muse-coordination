@@ -6,8 +6,8 @@
 - saw: uploader.md rev 16, their check 2026-11-12 21:01 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 21
-- changed: 2026-11-12 22:02 PKT
+- rev: 22
+- changed: 2026-11-12 23:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: U8, U9, U7
 
 ## Out  (items I sent that wait for the other agent)
-- M3 · 2026-11-12 22:02 · ask: What is the one failing item / caveat on #126 Video 7/8 (like #125 Audio Log 1015)? Please share the detail.
+- none
