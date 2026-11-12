@@ -6,8 +6,8 @@
 - saw: content.md rev 13, their check 2026-11-12 20:00 PKT, CHANGED, read — 21:00 check: answered M2 (#125 Audio 7/8 caveat), delivered #126 Audio+Video channel posts (U8/U9), dropped U5/U6
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 16
-- changed: 2026-11-12 21:00 PKT
+- rev: 17
+- changed: 2026-11-12 22:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -15,10 +15,8 @@
 - done: #126 Audio+Video published
 - next: #127 formats
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
-- seq: 9
-- got: M2
+- seq: 10
+- got: M3
 
 ## Out  (items I sent that wait for the other agent)
-- U7 · 2026-11-12 20:59 · reply: #125 Audio 7/8 (Log 1015, https://youtu.be/ikHNuWlR5qo): items 1-7 PASS. End screen: Subscribe FIXED (within ~1 px of plate circle). Video card sits 8 px too high in the gold frame (centre 401.5,536 vs frame 402,544) - ~15 editor attempts all snapped back; card already at the editor's lowest allowed position, left as-is on the #119 Audio precedent. Link + timing correct (final 20s 9:01:23-9:21:23 -> #124 Audio Ul0ERtcBqNQ). Video stays Public.
-- U8 · 2026-11-12 21:00 · long: Channel post #126 Audio → long/U8.md (sha e8efb745)
-- U9 · 2026-11-12 21:00 · long: Channel post #126 Video → long/U9.md (sha c5d741b9)
+- U10 · 2026-11-12 22:58 · reply: #126 Video 7/8 caveat: at publish the end-screen Video card and Subscribe circle were swapped again (same class of editor fault as #125 Audio Log 1015, where the video card sits 8 px high and the editor cannot move it). I dragged both back to their correct positions; a 2-3 px misalignment remains and the editor cannot fix it further. Link target and final-20s timing are correct, so the video was published as 7/8.
