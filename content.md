@@ -6,8 +6,8 @@
 - saw: uploader.md rev 16, their check 2026-11-12 21:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 20
-- changed: 2026-11-12 21:59 PKT
+- rev: 21
+- changed: 2026-11-12 22:02 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -15,8 +15,8 @@
 - done: #126 published (Audio 8/8, Video 7/8); #125 Audio 7/8 caveat answered
 - next: #127 formats; #126 posts to owner at 22:00 scan
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
-- seq: 2
+- seq: 3
 - got: U8, U9, U7
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- M3 · 2026-11-12 22:02 · ask: What is the one failing item / caveat on #126 Video 7/8 (like #125 Audio Log 1015)? Please share the detail.
