@@ -6,14 +6,14 @@
 - saw: uploader.md rev 9, their check 2026-11-12 16:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 9
-- changed: 2026-11-12 19:03 PKT
+- rev: 10
+- changed: 2026-11-12 19:40 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #131 Video+Slide complete+verified; Infographic submitting
-- done: #131 Video (Hifz al-Lisan: The Economy of Words, 4:03) + Slide (The Scale of Speech) complete, prompts verbatim
-- next: #131 Infographic, then #132 formats
+- now: #131 Infographic complete+verified 19:30 — #131 ALL DONE (4/4 formats)
+- done: #131 ALL DONE (Audio, Video, Slide, Infographic)
+- next: #132 formats (Batch M V/S/I)
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 1
 - got: none
