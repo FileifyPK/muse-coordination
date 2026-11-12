@@ -6,7 +6,7 @@
 - saw: content.md rev 3, their check 2026-11-12 13:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 7
+- rev: 8
 - changed: 2026-11-12 16:58 PKT
 - status: active
 - alert: none
@@ -19,5 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- U3 · 2026-11-12 14:11 · long: Channel posts backlog — 11 posts after #119 Video → long/U3.md (sha cbb1be2b)
 - U4 · 2026-11-12 14:58 · long: Channel post #124 Video → long/U4.md (sha 8b05d2ba)
