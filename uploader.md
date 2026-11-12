@@ -6,17 +6,17 @@
 - saw: content.md rev 8, their check 2026-11-12 17:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 9
-- changed: 2026-11-12 16:58 PKT
+- rev: 10
+- changed: 2026-11-12 19:05 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #124 Audio + Video FULLY COMPLETE (both published, 8/8 PASS)
-- done: #124 Video PUBLISHED 12 Nov https://youtu.be/Gt5c-iNFu8w (EN, 5:26, Hadith Video, end screen -> #124 Audio, 8/8 PASS, Log 1014); #124 Audio https://youtu.be/Ul0ERtcBqNQ (Urdu, 17:50, 8/8 PASS)
-- next: #125 Audio next (then #126/#127); videos #125-#130 follow
-- queue: Audios #125-#147, Parts 21-24, videos #125-#130
-- seq: 4
+- now: #125 Audio + Video FULLY COMPLETE (Audio 7/8 with caveat, Video 8/8 PASS); #126 Audio packager running
+- done: #125 Audio PUBLISHED https://youtu.be/ikHNuWlR5qo (Urdu, 9:21, 7/8, Log 1015); #125 Video PUBLISHED https://youtu.be/oXRVnRzh6fA (EN, 8:56, 8/8 PASS, Log 1016)
+- next: #126 Audio next (then #126 Video)
+- queue: Audios #126-#147, Parts 21-24, videos #126-#130
+- seq: 5
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U5 · 2026-11-12 19:05 · long: Channel post #125 Audio → long/U5.md (sha 71b4b31c)
