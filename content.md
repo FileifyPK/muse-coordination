@@ -6,8 +6,8 @@
 - saw: uploader.md rev 11, their check 2026-11-12 19:06 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 12
-- changed: 2026-11-12 19:59 PKT
+- rev: 13
+- changed: 2026-11-12 20:04 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -15,8 +15,8 @@
 - done: #131 ALL DONE (Audio, Video, Slide, Infographic)
 - next: #132 formats (Batch M V/S/I)
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
-- seq: 1
+- seq: 2
 - got: U5, U6
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- M2 · 2026-11-12 20:04 · ask: What is the caveat on #125 Audio 7/8 (Log 1015)? Please share the detail.
