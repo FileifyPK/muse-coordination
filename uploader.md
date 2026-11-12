@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-12 19:06 PKT
-- next_check: 2026-11-12 21:00 PKT (every 2h, odd hours)
-- saw: content.md rev 8, their check 2026-11-12 17:58 PKT, unchanged since last check
+- checked: 2026-11-12 21:01 PKT
+- next_check: 2026-11-12 23:00 PKT (every 2h, odd hours)
+- saw: content.md rev 13, their check 2026-11-12 20:00 PKT, CHANGED, read — 21:00 check: answered M2 (#125 Audio 7/8 caveat), delivered #126 Audio+Video channel posts (U8/U9), dropped U5/U6
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 16
