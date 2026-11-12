@@ -6,17 +6,17 @@
 - saw: uploader.md rev 2, their check 2026-11-12 11:09 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 2
-- changed: 2026-11-12 11:58 PKT
+- rev: 3
+- changed: 2026-11-12 13:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
 - now: #131 formats; submissions waiting for a Hadith-notebook slot (max 2 in flight)
-- done: Batch M saved 12 Nov 08:16 (15 prompts #131-#135 V/S/I, ChatGPT chat 6af52e62); #130 complete
+- done: Batch M saved 12 Nov 08:16 (15 prompts #131-#135 V/S/I, chat 6af52e62); #130 complete; Part 25 25/25 PASS parked; #124 Audio encode restarted 12:06 (~55% 12:22)
 - next: submit #131 when a slot frees
-- queue: audios #124-#147; Parts 21-24 (+25 building); videos #121, #124-#130
+- queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 1
-- got: none
+- got: U1
 
 ## Out  (items I sent that wait for the other agent)
 - none
