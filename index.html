@@ -209,7 +209,7 @@ applyLay();
 var SEEN={muse:new Date("2026-11-13T22:01:00+05:00"),meem:new Date("2026-11-13T23:02:00+05:00")};
 var ASOF=new Date("2026-11-13T23:15:00+05:00");
 var TOK=[{n:"Muse",pct:4,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:100,x:"Add-on: 14% used, 859M left",reset:"2026-11-14T00:29:00+05:00"}];
-var QA="Meem has 2 posts waiting for QA (#127 video and corrected Urdu audio).";
+var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
   $("d"+a[1]).className="dot "+c;$("t"+a[1]).textContent=l+", checked "+ago(age);
@@ -220,7 +220,7 @@ function evaluate(){var A=[],now=new Date(),th="";
   else{m="Weekly allowance resets in "+fmtD(left)+".";cl=t.pct>=60?"warn":""}
   th+='<div class="meter"><div class="mh"><span>'+t.n+" weekly</span><span>"+t.pct+'% used</span></div><div class="bar '+cl+'"><i style="width:'+Math.min(t.pct,100)+'%"></i></div><div class="dim">'+t.x+'</div><div>'+m+'</div></div>'});
  $("tokens").innerHTML=th;
- A.push({l:"warn",t:QA});
+ if(QA_PENDING.length)A.push({l:"warn",t:"Meem has "+QA_PENDING.length+" post"+(QA_PENDING.length>1?"s":"")+" waiting for QA ("+QA_PENDING.join(", ")+")."});
  var lv=A.some(function(a){return a.l==="bad"})?"bad":A.length?"warn":"ok";
  $("alerts").innerHTML='<div class="alert '+lv+'"><strong>'+(A.length?A.length+(A.length>1?" things need":" thing needs")+" attention":"All systems normal")+'</strong>'+(A.length?"<ul>"+A.map(function(a){return "<li>"+esc(a.t)+"</li>"}).join("")+"</ul>":"")+"</div>"}
 
@@ -247,12 +247,18 @@ function events(){var n=pktNow(),y=n.getFullYear(),m=n.getMonth(),d=n.getDate(),
 var RAW="https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/";
 var ROWS=[["now","Doing now"],["done","Last completed"],["next","Up next"],["queue","In queue"]];
 function parseState(t){var o={},s=(t.split("## State")[1]||"").split("## Out")[0];s.split("\n").forEach(function(l){var m=l.match(/^-\s*([a-z_]+):\s*(.*)$/);if(m)o[m[1]]=m[2].trim()});return o}
-async function loadGithub(){var ok=false;
- for(var a of [["muse","content.md"],["meem","uploader.md"]]){try{var r=await fetch(RAW+a[1],{cache:"no-store"});if(!r.ok)continue;var tx=await r.text(),st=parseState(tx),h="";
+async function loadGithub(){var ok=false,texts={};
+ for(var a of [["muse","content.md"],["meem","uploader.md"]]){try{var r=await fetch(RAW+a[1],{cache:"no-store"});if(!r.ok)continue;var tx=await r.text();texts[a[0]]=tx;var st=parseState(tx),h="";
   ROWS.forEach(function(p){if(st[p[0]])h+='<div class="row"><b>'+p[1]+"</b>"+esc(st[p[0]])+"</div>"});
   if(h){$(a[0]+"-state").innerHTML=h;ok=true}
   var lk=tx.split("## State")[0],m=lk.match(/-\s*checked:\s*(.+)/);if(m){var d=parsePkt(m[1].trim());if(d)SEEN[a[0]]=d}
-  if(a[0]==="muse"){var num=(st.now||st.done||"").match(/#(\d+)/);if(num)$("heroNum").textContent="#"+num[1];if(st.done)$("heroSub").textContent=st.done.length>100?st.done.slice(0,100)+"…":st.done;if(st.next)$("heroNext").textContent="Up next: "+st.next;}}catch(e){}}
+}catch(e){}}
+ try{if(texts.muse&&texts.meem){var outSec=texts.meem.split("## Out")[1]||"";
+  var gotM=texts.muse.split("## State")[1].split("## Out")[0].match(/-\s*got:\s*(.+)/);
+  var got=gotM?gotM[1].split(",").map(function(s){return s.trim()}):[];
+  QA_PENDING=[];
+  var re=/^- (U\d+) · .*long: Channel post ([^\n]+?)(?: →|$)/gm,mm;
+  while((mm=re.exec(outSec))!==null){if(got.indexOf(mm[1])<0)QA_PENDING.push(mm[2].trim());}}}catch(e){}
  var b=$("livemark");b.textContent=ok?"Live":"Saved snapshot";b.classList.toggle("live",ok);
  try{var r2=await fetch("https://api.github.com/repos/FileifyPK/muse-coordination/commits?per_page=8");if(r2.ok){var cs=await r2.json();if(cs.length){$("feed").innerHTML=cs.map(function(c){return "<li>"+esc(c.commit.message.split("\n")[0])+"<time>"+hm(new Date(c.commit.author.date))+" PKT</time></li>"}).join("");$("feedsrc").textContent="Live: latest GitHub commits"}}}catch(e){}
  evaluate()}
