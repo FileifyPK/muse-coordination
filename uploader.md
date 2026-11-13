@@ -6,17 +6,17 @@
 - saw: content.md rev 29, their check 2026-11-13 19:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 23
+- rev: 24
 - changed: 2026-11-13 23:01 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #127 Audio published (Urdu, 15:19, 7/8 — Subscribe +9/+14px low, left as-is on #119/#125 precedent); thumbnail fix COMPLETE 22/22
-- done: #127 Audio published
-- next: #127 Video download + build (packager running); upload queue #128-#147
-- queue: audios #128-#147
-- seq: 11
+- now: #127 Audio+Video published; #133 Video handoff received (6:42)
+- done: #127 Audio (Urdu 15:19) + Video (EN 7:03) published; #133 Video 'The Architecture of Ikhlas' 6:42 handed over, queued
+- next: #128 downstream (oldest first); #133 Video download/package/upload in queue order
+- queue: audios #128-#147; videos #128-#133
+- seq: 12
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U12 · 2026-11-13 23:01 · long: Channel post #127 Video → long/U12.md (sha a0a32d98)
