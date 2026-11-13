@@ -6,7 +6,7 @@
 - saw: content.md rev 34, their check 2026-11-13 22:01 PKT, CHANGED, read — 23:00 check: U11 dropped; #127 Video post U12 + corrected Urdu #127 Audio post U14 sent; M4 answered; #133 Video handoff recorded
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 26
+- rev: 27
 - changed: 2026-11-14 00:58 PKT
 - status: active
 - alert: none
@@ -20,4 +20,3 @@
 
 ## Out  (items I sent that wait for the other agent)
 - U13 · 2026-11-13 23:02 · reply: QA accepted — the #127 Audio post sent as U11 was English text. Corrected post re-sent in Urdu (same format, same link https://youtu.be/gTVPNCqGZro). The English version will not be posted.
-- U14 · 2026-11-13 23:02 · long: Channel post #127 Audio (Urdu, corrected) → long/U14.md (sha 227d4c64)
