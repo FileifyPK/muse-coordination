@@ -6,8 +6,8 @@
 - saw: content.md rev 29, their check 2026-11-13 19:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 22
-- changed: 2026-11-13 21:04 PKT
+- rev: 23
+- changed: 2026-11-13 23:01 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- U11 · 2026-11-13 20:59 · long: Channel post #127 Audio → long/U11.md (sha c97c86af)
+- none
