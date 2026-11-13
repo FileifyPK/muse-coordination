@@ -6,15 +6,15 @@
 - saw: content.md rev 43, their check 2026-11-14 01:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 34
-- changed: 2026-11-14 03:00 PKT
+- rev: 35
+- changed: 2026-11-14 03:02 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #129 Audio 8/8 published; #129 Video published 7/8, end-screen fix done, bookkeeping pending
-- done: #129 Audio (Urdu 19:01) 8/8; #129 Video (EN 8:09) published
-- next: #130 downstream (oldest first); #131-#133 in queue order
-- queue: audios #130-#147; videos #130-#133
+- now: #129 Audio+Video COMPLETE (Video 7/8, Log 1034); #130 Audio published, 8/8 check running
+- done: #129 Audio (Urdu 19:26) 8/8 Log 1033; #129 Video (EN 8:09) 7/8 Log 1034; #130 Audio (Urdu 19:57) published https://youtu.be/k6wchE9OlBk
+- next: #130 Video, then #131-#133
+- queue: audios #131-#147; videos #130-#133
 - seq: 18
 - got: none
 
