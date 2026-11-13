@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sacred Knowledge — Pipeline Dashboard</title>
+<style>
+  :root{--navy:#041A3C;--gold:#D5A322;--gold2:#F2CB60;--ivory:#F3E7CD;--emerald:#34D399;--muted:#9FB0CC}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ivory);background:var(--navy);background-image:radial-gradient(600px 300px at 15% -5%,rgba(213,163,34,.20),transparent 60%),radial-gradient(500px 300px at 95% 10%,rgba(52,211,153,.13),transparent 60%),linear-gradient(180deg,#041A3C,#071E44 60%,#041A3C);min-height:100vh;padding:20px 16px 32px}
+  .wrap{max-width:760px;margin:0 auto}
+  h1{font-size:22px;color:var(--gold2);margin:6px 0 4px;line-height:1.3}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:16px;line-height:1.5}
+  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+  .pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(213,163,34,.45);border-radius:999px;padding:6px 12px;font-size:13px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#FBBF24;box-shadow:0 0 8px #FBBF24}
+  .dot.live{background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
+  .meta{font-size:12px;color:var(--muted)}
+  button{background:var(--gold);color:#041A3C;border:0;border-radius:10px;padding:9px 16px;font-weight:700;font-size:14px;cursor:pointer}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:rgba(255,255,255,.06);border:1px solid rgba(213,163,34,.35);border-radius:16px;padding:16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  .card h2{font-size:17px;color:var(--gold2);margin:0 0 12px}
+  .row{margin:10px 0;line-height:1.5}
+  .row b{display:block;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+  .row span{font-size:14.5px}
+  .note{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🧭 Sacred Knowledge — Pipeline Dashboard</h1>
+<div class="sub">Aap ke kaam ki taaza surat-e-haal — Muse aur Meem dono ki.</div>
+<div class="bar">
+  <span class="pill"><span class="dot" id="livedot"></span><span id="livetext">Save shuda halat</span></span>
+  <span class="meta" id="updated">Aakhri update: 13 Nov, raat 10:05 PKT</span>
+  <button onclick="load()">↻ Taaza karein</button>
+</div>
+<div class="grid">
+  <div class="card" id="muse"><h2>Muse — Studio ka kaam</h2>
+    <div class="row"><b>Abhi kya ho raha hai</b><span>#133 Video ka intezar — limit aaj raat 10:05 khulni hai, jaanch 10:05 par hai</span></div>
+    <div class="row"><b>Aakhri mukammal kaam</b><span>#133 Slide + Infographic (aaj subah); #132 aur #131 ALL DONE</span></div>
+    <div class="row"><b>Agla kaam</b><span>#133 Video submit, phir #134 aur #135 formats</span></div>
+    <div class="row"><b>Qataar me</b><span>#134, #135 formats; audios #148–#150 us ke baad</span></div>
+  </div>
+  <div class="card" id="meem"><h2>Meem — Upload ka kaam</h2>
+    <div class="row"><b>Abhi kya ho raha hai</b><span>#127 Video download + build ho raha hai</span></div>
+    <div class="row"><b>Aakhri mukammal kaam</b><span>#127 Audio published (aaj, Urdu, 15:19); #126, #125, #124 bhi published</span></div>
+    <div class="row"><b>Agla kaam</b><span>#128 Audio, phir qataar ke mutabiq</span></div>
+    <div class="row"><b>Qataar me</b><span>audios #128–#147; Al-An'am Parts 21–24 (Part 25 built, parked); videos #121, #127–#130; #131</span></div>
+  </div>
+</div>
+<div class="note">Yeh page har 10 minute khud refresh hota hai.</div>
+</div>
+<script>
+const FILES = {
+  muse: "https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/content.md",
+  meem: "https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/uploader.md"
+};
+const LABELS = {now:"Abhi kya ho raha hai", done:"Aakhri mukammal kaam", next:"Agla kaam", queue:"Qataar me"};
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+function parseState(text){
+  const out = {};
+  const section = text.split("## State")[1] || "";
+  const body = section.split("## Out")[0];
+  body.split("\n").forEach(line=>{
+    const m = line.match(/^-\s*([a-z_]+):\s*(.*)$/);
+    if(m) out[m[1]] = m[2].trim();
+  });
+  return out;
+}
+function render(id, state){
+  const el = document.getElementById(id);
+  let html = "<h2>" + (id==="muse" ? "Muse — Studio ka kaam" : "Meem — Upload ka kaam") + "</h2>";
+  ["now","done","next","queue"].forEach(k=>{
+    if(state[k] !== undefined){
+      html += '<div class="row"><b>'+LABELS[k]+'</b><span>'+esc(state[k])+'</span></div>';
+    }
+  });
+  el.innerHTML = html;
+}
+async function load(){
+  try{
+    for(const id of ["muse","meem"]){
+      const r = await fetch(FILES[id], {cache:"no-store"});
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      render(id, parseState(await r.text()));
+    }
+    document.getElementById("livedot").classList.add("live");
+    document.getElementById("livetext").textContent = "Live — GitHub se taza";
+    document.getElementById("updated").textContent = "Aakhri update: " + new Date().toLocaleString("en-GB", {timeZone:"Asia/Karachi"}) + " PKT";
+  }catch(e){
+    /* fetch na chale to save shuda halat hi rehti hai */
+  }
+}
+load();
+setInterval(load, 10*60*1000);
+</script>
+</body>
+</html>
