@@ -1,209 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sacred Knowledge — Pipeline Dashboard v2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Sacred Knowledge – Pipeline Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#041A3C;--gold:#D5A322;--gold2:#F2CB60;--ivory:#F3E7CD;--emerald:#34D399;--muted:#9FB0CC}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ivory);background:var(--navy);background-image:radial-gradient(600px 300px at 15% -5%,rgba(213,163,34,.20),transparent 60%),radial-gradient(500px 300px at 95% 10%,rgba(52,211,153,.13),transparent 60%),linear-gradient(180deg,#041A3C,#071E44 60%,#041A3C);min-height:100vh;padding:20px 16px 32px}
-  .wrap{max-width:860px;margin:0 auto}
-  h1{font-size:22px;color:var(--gold2);margin:6px 0 4px;line-height:1.3}
-  .sub{color:var(--muted);font-size:14px;margin-bottom:16px;line-height:1.5}
-  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
-  .pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(213,163,34,.45);border-radius:999px;padding:6px 12px;font-size:13px}
-  .dot{width:9px;height:9px;border-radius:50%;background:#FBBF24;box-shadow:0 0 8px #FBBF24}
-  .dot.live{background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
-  .meta{font-size:12px;color:var(--muted)}
-  button{background:var(--gold);color:#041A3C;border:0;border-radius:10px;padding:9px 16px;font-weight:700;font-size:14px;cursor:pointer}
-  .grid{display:grid;grid-template-columns:1fr;gap:14px}
-  @media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
-  .card{background:rgba(255,255,255,.06);border:1px solid rgba(213,163,34,.35);border-radius:16px;padding:16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
-  .card h2{font-size:17px;color:var(--gold2);margin:0 0 12px}
-  .row{margin:10px 0;line-height:1.5}
-  .row b{display:block;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
-  .row span{font-size:14.5px}
-  .row .small{font-size:12.5px;color:var(--muted)}
-  .news{margin:0;padding-left:18px}
-  .news li{margin:8px 0;line-height:1.45;font-size:14.5px}
-  .news a{color:var(--gold2);text-decoration:none}
-  .news a:hover{text-decoration:underline}
-  .news .src{font-size:12px;color:var(--muted)}
-  .links{display:flex;flex-wrap:wrap;gap:8px}
-  .links a{display:inline-block;background:rgba(213,163,34,.16);border:1px solid rgba(213,163,34,.5);color:var(--ivory);text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13.5px;font-weight:600}
-  .links a:hover{background:rgba(213,163,34,.32)}
-  .note{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}
+:root{--bg:#06112A;--surf:rgba(16,36,76,.62);--line:rgba(226,182,74,.28);--gold:#E2B64A;--ink:#F3EBD6;--dim:#B9B49F;--mute:#8C9BBA;--ok:#4FD1A1;--warn:#F5B84B;--bad:#FF7A66;--track:rgba(243,235,214,.13);--shadow:0 10px 30px rgba(0,0,0,.28);--on:#06112A}
+[data-theme=light]{--bg:#EEF2F8;--surf:rgba(255,255,255,.85);--line:rgba(11,29,63,.16);--gold:#9A6A06;--ink:#0B1D3F;--dim:#4A5876;--mute:#66738F;--ok:#12805F;--warn:#A86400;--bad:#C2402B;--track:rgba(11,29,63,.11);--shadow:0 8px 24px rgba(11,29,63,.1);--on:#fff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font:15px/1.55 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;padding:max(14px,env(safe-area-inset-top)) 14px max(22px,env(safe-area-inset-bottom));
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Cg fill='none' stroke='rgba(226,182,74,.07)'%3E%3Crect x='16' y='16' width='40' height='40'/%3E%3Crect x='16' y='16' width='40' height='40' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(900px 480px at 90% -8%,rgba(226,182,74,.13),transparent 60%),radial-gradient(700px 500px at -8% 25%,rgba(52,96,180,.28),transparent 60%),var(--bg)}
+.wrap{max-width:1120px;margin:0 auto}
+.dim{color:var(--dim)}.mute{color:var(--mute)}
+h1,h2,.big,.kpi b,.clock{font-family:Fraunces,Georgia,serif;font-weight:500}
+.top{display:grid;gap:10px 18px;grid-template-columns:1fr auto;align-items:center;margin-bottom:14px}
+h1{margin:0;font-size:clamp(24px,5vw,32px);line-height:1.15;color:var(--gold)}
+.sub{margin:2px 0 0;color:var(--dim);font-size:14px}
+.clockbox{text-align:right}.clock{font-size:26px;line-height:1.1}
+.wx{grid-column:1/-1;font-size:14px;color:var(--dim)}.wx b{color:var(--ink)}
+.tools{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:inherit;cursor:pointer;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 14px;min-height:40px;font-weight:600;font-size:14px}
+button:hover{border-color:var(--gold)}
+button.pri{background:var(--gold);border-color:var(--gold);color:var(--on)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.badge{padding:4px 11px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid var(--line);color:var(--dim)}
+.badge.live{border-color:var(--ok);color:var(--ok)}
+.alert{background:var(--surf);border:1px solid;border-left-width:6px;border-radius:14px;padding:12px 16px;margin-bottom:14px}
+.alert.ok{border-color:var(--ok)}.alert.warn{border-color:var(--warn)}.alert.bad{border-color:var(--bad)}
+.alert strong{display:block;margin-bottom:2px}.alert.ok strong{color:var(--ok)}.alert.warn strong{color:var(--warn)}.alert.bad strong{color:var(--bad)}
+.alert ul{margin:4px 0 0;padding-left:18px;font-size:14px;color:var(--dim)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:var(--shadow);min-width:0}
+.card.wide{grid-column:1/-1}
+.card.hero{border-radius:26px;border-color:var(--gold)}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+h2{margin:0;font-size:19px;color:var(--gold)}
+.ctl{display:flex;gap:4px}.ib{padding:0;width:34px;min-height:34px;border-radius:10px;font-size:15px;color:var(--mute)}
+.card.closed .cb{display:none}.card.closed .ch{margin-bottom:0}
+.row{margin:9px 0}.row b{display:block;font-size:13px;font-weight:600;color:var(--dim)}
+.src{font-size:12.5px;color:var(--mute);margin-top:10px}
+hr{border:0;border-top:1px solid var(--line);margin:12px 0}
+.health{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--mute);flex:none}
+.dot.ok{background:var(--ok);box-shadow:0 0 0 4px rgba(79,209,161,.2)}.dot.warn{background:var(--warn);box-shadow:0 0 0 4px rgba(245,184,75,.2)}.dot.bad{background:var(--bad);box-shadow:0 0 0 4px rgba(255,122,102,.2)}
+.herohead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 20px}
+.big{font-size:clamp(52px,13vw,88px);line-height:.95;color:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:16px}
+.kpi{border:1px solid var(--line);border-radius:14px;padding:10px 12px}.kpi b{display:block;font-size:26px;color:var(--ink);line-height:1.2}.kpi span{font-size:13px;color:var(--dim)}
+.meter{margin:12px 0 4px}.mh{display:flex;justify-content:space-between;font-weight:600}
+.bar{position:relative;height:10px;border-radius:99px;background:var(--track);margin:6px 0}
+.bar>i{display:block;height:100%;border-radius:99px;background:var(--gold)}.bar.warn>i{background:var(--warn)}.bar.bad>i{background:var(--bad)}
+.feed,.news,.up{list-style:none;margin:0;padding:0}
+.feed li,.news li,.up li{padding:9px 0;border-bottom:1px solid var(--track)}.feed li:last-child,.news li:last-child,.up li:last-child{border-bottom:0}
+.feed time{display:block;font-size:12.5px;color:var(--mute)}
+.news a{color:var(--ink);text-decoration:none;font-weight:600}.news a:hover{color:var(--gold);text-decoration:underline}.news small{display:block;color:var(--mute);font-size:12.5px}
+.up li{display:flex;justify-content:space-between;gap:12px;align-items:center}.up small{display:block;color:var(--mute);font-size:12.5px}
+.count{border:1px solid var(--gold);color:var(--gold);border-radius:10px;padding:3px 10px;font-weight:700;font-size:13px;white-space:nowrap}
+.cm{font-family:Fraunces,Georgia,serif;margin:12px 0 4px}.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center;font-size:13px}
+.dw{color:var(--mute)}.cd{padding:5px 0;border-radius:8px}.cd.td{background:var(--gold);color:var(--on);font-weight:700}.cd.ev{box-shadow:inset 0 -3px 0 var(--gold)}.cd.wf:not(.td){border:1px dashed var(--mute)}
+.ringrow{display:flex;gap:16px;align-items:center}.ring text{font-family:Fraunces,Georgia,serif;fill:var(--ink)}
+.ringbg{stroke:var(--track)}.ringfg{stroke:var(--gold);transition:stroke-dashoffset 1.2s ease}
+.links{display:flex;flex-wrap:wrap;gap:8px}.links a{color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:600}.links a:hover{border-color:var(--gold);color:var(--gold)}
+.foot{margin-top:16px;font-size:13px;color:var(--mute);display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+@media(min-width:760px){.top{grid-template-columns:1fr auto auto}.wx{grid-column:auto;grid-row:1;text-align:right}.tools{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{:root,[data-theme]{--bg:#fff;--surf:#fff;--line:#bbb;--gold:#7C5504;--ink:#000;--dim:#333;--mute:#555;--track:#ddd;--on:#fff;--shadow:none}body{background:#fff}.tools,.ctl,.foot button{display:none}.grid{display:block}.card{break-inside:avoid;margin-bottom:10px}.card.closed .cb{display:block}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>🧭 Sacred Knowledge — Pipeline Dashboard</h1>
-<div class="sub">Aap ke kaam ki taaza surat-e-haal — Muse aur Meem dono ki.</div>
-<div class="bar">
-  <span class="pill"><span id="clock">—</span></span>
-  <span class="pill"><span id="weather">Sialkot: 20°C Smoke (snapshot 13 Nov 23:15 PKT)</span></span>
-  <span class="pill"><span class="dot" id="livedot"></span><span id="livetext">Save shuda halat</span></span>
-  <span class="meta" id="updated">Aakhri update: 13 Nov, raat 11:30 PKT</span>
-  <button onclick="loadAll()">↻ Taaza karein</button>
+<header class="top">
+  <div><h1>Sacred Knowledge</h1><p class="sub">Live pipeline for Muse (content) and Meem (uploads)</p></div>
+  <div class="clockbox"><div class="clock" id="clock">--:--:--</div><div class="dim" id="dateline"></div></div>
+  <div class="wx" id="weather"><b>Sialkot 20°C</b>, smoke. Tomorrow: high 28°C, low 15°C <span class="mute">(saved 13 Nov, 23:15)</span></div>
+  <div class="tools"><span class="badge" id="livemark">Saved snapshot</span><button class="pri" id="bRefresh">Refresh now</button><button id="bTheme">Light / dark</button><button id="bPrint">Print summary</button></div>
+</header>
+
+<div id="alerts" role="status" aria-live="polite"></div>
+
+<main class="grid" id="grid">
+
+<section class="card hero wide" data-id="episode" data-title="Current episode">
+ <div class="cb">
+  <div class="herohead"><div><div class="big" id="heroNum">#133</div><div class="dim" id="heroSub">Video "The Architecture of Ikhlas", 6:42. All 4 formats done.</div></div>
+  <div class="dim" id="heroNext">Up next: #134 (V 2766 / S 2536 / IG 2380)</div></div>
+  <div class="kpis">
+   <div class="kpi"><b>18</b><span>Topics fully done (#116 to #133)</span></div>
+   <div class="kpi"><b>20 / 25</b><span>Al-An'am Tafsir published</span></div>
+   <div class="kpi"><b>10 / 10</b><span>PPTX slide decks done</span></div>
+   <div class="kpi"><b>20 + 6</b><span>Meem queue: audios + videos</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="card" data-id="muse" data-title="Muse: content studio">
+ <div class="cb">
+  <div class="health"><i class="dot" id="dMuse"></i><span id="tMuse">Checking</span></div>
+  <div id="muse-state">
+   <div class="row"><b>Doing now</b>#133 ALL DONE. Video complete (6:42), handed to Meem</div>
+   <div class="row"><b>Last completed</b>#133 video "The Architecture of Ikhlas" finished about 22:44 PKT, all 4 formats done</div>
+   <div class="row"><b>Up next</b>#134 formats (V 2766 / S 2536 / IG 2380)</div>
+   <div class="row"><b>In queue</b>Audios #124 to #147; Parts 21 to 24 (Part 25 parked); videos #121 and #124 to #130</div>
+  </div>
+  <div class="src">Source: GitHub content.md, snapshot rev 34, 13 Nov 22:51 PKT</div>
+ </div>
+</section>
+
+<section class="card" data-id="meem" data-title="Meem: uploads">
+ <div class="cb">
+  <div class="health"><i class="dot" id="dMeem"></i><span id="tMeem">Checking</span></div>
+  <div id="meem-state">
+   <div class="row"><b>Doing now</b>#127 audio and video published; #133 video handoff received (6:42)</div>
+   <div class="row"><b>Last completed</b>#127 audio (Urdu 15:19) and video (EN 7:03) published; #133 video handed over and queued</div>
+   <div class="row"><b>Up next</b>#128 onward (oldest first); #133 video download, package and upload in queue order</div>
+   <div class="row"><b>In queue</b>Audios #128 to #147; videos #128 to #133</div>
+  </div>
+  <div class="row"><b>Posts waiting for QA</b>#127 video post (U12) and corrected Urdu #127 audio post (U14), arrived 23:01 to 23:02 PKT</div>
+  <div class="src">Source: GitHub uploader.md, snapshot rev 25, 13 Nov 23:02 PKT</div>
+ </div>
+</section>
+
+<section class="card" data-id="tokens" data-title="Tokens and forecast">
+ <div class="cb"><div id="tokens"></div>
+  <hr><div class="row"><b>NotebookLM</b>#133 video submitted. Nothing is blocked.</div>
+  <div class="src">Usage figures are from the 13 Nov 23:15 PKT snapshot.</div></div>
+</section>
+
+<section class="card" data-id="feed" data-title="Recent activity">
+ <div class="cb"><ul class="feed" id="feed">
+  <li>#133 video complete, all 4 formats<time>Muse, 22:44 PKT</time></li>
+  <li>#133 video submitted to NotebookLM<time>22:12 PKT</time></li>
+  <li>#127 video post and corrected audio post arrived for QA<time>Meem, 23:01 PKT</time></li>
+  <li>#127 audio and video published<time>Meem</time></li></ul>
+  <div class="src" id="feedsrc">Snapshot. Shows the latest GitHub commits when the repository is readable.</div></div>
+</section>
+
+<section class="card" data-id="events" data-title="Upcoming and calendar">
+ <div class="cb"><ul class="up" id="up"></ul><div id="cal"></div>
+  <div class="src">Underline: event day. Dashed: WiFi dates (5th ask, 10th deadline).</div></div>
+</section>
+
+<section class="card" data-id="tafsir" data-title="Tafsir and slides">
+ <div class="cb"><div class="ringrow">
+  <svg class="ring" width="92" height="92" viewBox="0 0 92 92" aria-label="20 of 25 parts published"><circle class="ringbg" cx="46" cy="46" r="38" fill="none" stroke-width="9"/><circle class="ringfg" id="ring" cx="46" cy="46" r="38" fill="none" stroke-width="9" stroke-linecap="round" stroke-dasharray="238.8" stroke-dashoffset="238.8" transform="rotate(-90 46 46)"/><text x="46" y="52" text-anchor="middle" font-size="20">80%</text></svg>
+  <div><b>Surah Al-An'am Tafsir</b><div class="dim">Audios 25/25 done. Parts 1 to 20 published. Parts 21 to 25 are pending with Meem (Part 25 is built and parked).</div></div></div>
+  <hr><div class="row"><b>PPTX slides</b>10 of 10 completed</div></div>
+</section>
+
+<section class="card" data-id="news" data-title="AI news">
+ <div class="cb"><ul class="news" id="news-list">
+  <li><a href="https://www.swarchitect.net/en/ai-launches-2026-11/" target="_blank" rel="noopener">Claude Fable 5.2 (Anthropic)</a><small>9 Nov. Top of the benchmark index. $8/$40 per 1M tokens, 20% cheaper than the previous model.</small></li>
+  <li><a href="https://csuite.so/blog/ai-models-roundup-november-2026" target="_blank" rel="noopener">Gemini 4 Carbon GA (Google)</a><small>10 Nov. $2/$10 intro pricing until 30 Nov.</small></li>
+  <li><a href="https://pondero.ai/news/2026-11-10-daily-brief/" target="_blank" rel="noopener">Meta Muse Ember (Meta)</a><small>9 Nov. Smallest model. $0.10/$0.50 per 1M tokens, 1M context.</small></li>
+  <li><a href="https://forum.astracruz.com/category/8/new-ai-model-releases" target="_blank" rel="noopener">Qwen4-Max-Preview (Alibaba)</a><small>11 Nov. Preview available until 25 Nov.</small></li>
+  <li><a href="https://byobot.ai/ai-news/ai-daily-newsstand-november-8-2026" target="_blank" rel="noopener">Gemini Omni 1.2 Flash GA (Google)</a><small>5 Nov. Video with audio, 15 second clips, 30% cheaper.</small></li></ul>
+  <div class="src" id="news-src">Snapshot from 13 Nov 2026. Updates from Hacker News when online.</div></div>
+</section>
+
+<section class="card wide" data-id="links" data-title="Quick links">
+ <div class="cb"><div class="links">
+  <a href="https://www.notion.so/8c612626014a82e7910381b0a26a4e5b" target="_blank" rel="noopener">Notion: Production Queue</a>
+  <a href="https://www.notion.so" target="_blank" rel="noopener">Notion: Uploaded Videos</a>
+  <a href="https://studio.youtube.com" target="_blank" rel="noopener">YouTube Studio</a>
+  <a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a>
+  <a href="https://github.com/FileifyPK/muse-coordination" target="_blank" rel="noopener">GitHub: Coordination</a>
+  <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>
+  <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a></div></div>
+</section>
+
+</main>
+<div class="foot"><span>Refreshes every 10 minutes. Live data: GitHub, Open-Meteo, Hacker News. Layout and theme are saved in this browser.</span><button id="bReset">Reset layout</button></div>
 </div>
-<div class="grid">
-  <div class="card" id="muse"><h2>Muse — Studio ka kaam</h2>
-    <div class="row"><b>Abhi kya ho raha hai</b><span>#133 ALL DONE — Video complete 6:42, handed to Meem</span></div>
-    <div class="row"><b>Aakhri mukammal kaam</b><span>#133 Video 'The Architecture of Ikhlas' 6:42 complete ~22:44 PKT; all 4 formats done</span></div>
-    <div class="row"><b>Agla kaam</b><span>#134 formats (V 2766 / S 2536 / IG 2380)</span></div>
-    <div class="row"><b>Qataar me</b><span>audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130</span></div>
-    <div class="row"><b>All Done</b><span>#116–#133 (18 topics)</span></div>
-    <div class="row"><span class="small">Snapshot: content.md rev 34, 13 Nov 22:51 PKT</span></div>
-  </div>
-  <div class="card" id="meem"><h2>Meem — Upload ka kaam</h2>
-    <div class="row"><b>Abhi kya ho raha hai</b><span>#127 Audio+Video published; #133 Video handoff received (6:42)</span></div>
-    <div class="row"><b>Aakhri mukammal kaam</b><span>#127 Audio (Urdu 15:19) + Video (EN 7:03) published; #133 Video handed over, queued</span></div>
-    <div class="row"><b>Agla kaam</b><span>#128 downstream (oldest first); #133 Video download/package/upload in queue order</span></div>
-    <div class="row"><b>Qataar me</b><span>audios #128-#147; videos #128-#133</span></div>
-    <div class="row"><b>Post pending</b><span>#127 Video post (U12) aur corrected Urdu #127 Audio post (U14) 23:01-23:02 ko aaye, QA pending</span></div>
-    <div class="row"><span class="small">Snapshot: uploader.md rev 25, 13 Nov 23:02 PKT</span></div>
-  </div>
-  <div class="card"><h2>Token aur quota</h2>
-    <div class="row"><b>Muse</b><span>Weekly 4% used, additional 2% (7.8B baqi), reset 20 Nov 04:40 PKT</span></div>
-    <div class="row"><b>Meem</b><span>Weekly 100% used, additional 14% used (859M baqi), reset 14 Nov 00:29 PKT</span></div>
-    <div class="row"><b>NotebookLM</b><span>#133 Video submit ho gaya, abhi koi block nahi</span></div>
-    <div class="row"><span class="small">Checked 13 Nov 22:00 PKT</span></div>
-  </div>
-  <div class="card"><h2>AI News</h2>
-    <ul class="news" id="ainews">
-      <li>Claude Fable 5.2 (Anthropic, 9 Nov) — index top, $8/$40, 20% sasta <span class="src"><a href="https://www.swarchitect.net/en/ai-launches-2026-11/" target="_blank" rel="noopener">swarchitect</a></span></li>
-      <li>Gemini 4 Carbon GA (Google, 10 Nov) — $2/$10 intro 30 Nov tak <span class="src"><a href="https://csuite.so/blog/ai-models-roundup-november-2026" target="_blank" rel="noopener">csuite</a></span></li>
-      <li>Meta Muse Ember (9 Nov) — sab se chhota model, $0.10/$0.50 per 1M, 1M context <span class="src"><a href="https://pondero.ai/news/2026-11-10-daily-brief/" target="_blank" rel="noopener">pondero</a></span></li>
-      <li>Qwen4-Max-Preview (Alibaba, 11 Nov) — preview 25 Nov tak <span class="src"><a href="https://forum.astracruz.com/category/8/new-ai-model-releases" target="_blank" rel="noopener">astracruz</a></span></li>
-      <li>Gemini Omni 1.2 Flash GA (5 Nov) — video with audio, 15 sec clips, 30% sasta <span class="src"><a href="https://byobot.ai/ai-news/ai-daily-newsstand-november-8-2026" target="_blank" rel="noopener">byobot</a></span></li>
-    </ul>
-    <div class="row"><span class="small">Snapshot 13 Nov raat; live koshish Hacker News se hoti hai</span></div>
-  </div>
-  <div class="card"><h2>Aane wale kaam</h2>
-    <div class="row"><b>Hifz Dastar Bandi</b><span>Sunday 15 Nov 2026 ~08:00 — <span id="cd-hifz">—</span></span></div>
-    <div class="row"><b>Umair ki shadi</b><span>Sunday 22 Nov 2026 (reminder 19 Nov) — <span id="cd-umair">—</span></span></div>
-    <div class="row"><b>WiFi 1500 PKR</b><span>5th ko poochna, 10th deadline — <span id="cd-wifi">—</span></span></div>
-  </div>
-  <div class="card"><h2>Tafsir aur PPTX</h2>
-    <div class="row"><b>Al-An'am (006)</b><span>25/25 audios done, Parts 1-20 published, 21-25 pending Meem (Part 25 built, parked)</span></div>
-    <div class="row"><b>PPTX Slides</b><span>10/10 completed</span></div>
-  </div>
-  <div class="card"><h2>Quick links</h2>
-    <div class="links">
-      <a href="https://www.notion.so/8c612626014a82e7910381b0a26a4e5b" target="_blank" rel="noopener">Notion — Production Queue</a>
-      <a href="https://www.notion.so" target="_blank" rel="noopener">Notion — Uploaded Videos</a>
-      <a href="https://studio.youtube.com" target="_blank" rel="noopener">YouTube Studio</a>
-      <a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a>
-      <a href="https://github.com/FileifyPK/muse-coordination" target="_blank" rel="noopener">GitHub coordination</a>
-      <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>
-      <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>
-    </div>
-  </div>
-</div>
-<div class="note">Yeh page har 10 minute khud refresh hota hai. Dekhna muft hai, koi token nahi lagta.</div>
-</div>
+
 <script>
-const FILES = {
-  muse: "https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/content.md",
-  meem: "https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/uploader.md"
-};
-const LABELS = {now:"Abhi kya ho raha hai", done:"Aakhri mukammal kaam", next:"Agla kaam", queue:"Qataar me"};
-const EXTRA = {
-  muse: '<div class="row"><b>All Done</b><span>#116–#133 (18 topics)</span></div>',
-  meem: '<div class="row"><b>Post pending</b><span>#127 Video post (U12) aur corrected Urdu #127 Audio post (U14) 23:01-23:02 ko aaye, QA pending</span></div>'
-};
-function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
-function parseState(text){
-  const out = {};
-  const section = text.split("## State")[1] || "";
-  const body = section.split("## Out")[0];
-  body.split("\n").forEach(line=>{
-    const m = line.match(/^-\s*([a-z_]+):\s*(.*)$/);
-    if(m) out[m[1]] = m[2].trim();
-  });
-  return out;
-}
-function render(id, state){
-  const el = document.getElementById(id);
-  let html = "<h2>" + (id==="muse" ? "Muse — Studio ka kaam" : "Meem — Upload ka kaam") + "</h2>";
-  ["now","done","next","queue"].forEach(k=>{
-    if(state[k] !== undefined){
-      html += '<div class="row"><b>'+LABELS[k]+'</b><span>'+esc(state[k])+'</span></div>';
-    }
-  });
-  html += EXTRA[id];
-  el.innerHTML = html;
-}
-async function loadGitHub(){
-  for(const id of ["muse","meem"]){
-    const r = await fetch(FILES[id], {cache:"no-store"});
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    render(id, parseState(await r.text()));
-  }
-  document.getElementById("livedot").classList.add("live");
-  document.getElementById("livetext").textContent = "Live — GitHub se taza";
-  document.getElementById("updated").textContent = "Aakhri update: " + new Date().toLocaleString("en-GB", {timeZone:"Asia/Karachi"}) + " PKT";
-}
-const WMO = {0:"Clear",1:"Mostly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Fog",51:"Light drizzle",53:"Drizzle",55:"Dense drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Light snow",73:"Snow",75:"Heavy snow",80:"Light showers",81:"Showers",82:"Heavy showers",95:"Thunderstorm",96:"Thunderstorm + hail",99:"Thunderstorm + hail"};
-async function loadWeather(){
-  try{
-    const u = "https://api.open-meteo.com/v1/forecast?latitude=32.49&longitude=74.52&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FKarachi";
-    const r = await fetch(u);
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    const j = await r.json();
-    const t = Math.round(j.current.temperature_2m);
-    const c = WMO[j.current.weather_code] || "—";
-    const hi = Math.round(j.daily.temperature_2m_max[0]), lo = Math.round(j.daily.temperature_2m_min[0]);
-    document.getElementById("weather").textContent = "Sialkot: " + t + "°C " + c + " (aaj " + lo + "–" + hi + "°C)";
-  }catch(e){ /* snapshot hi rehta hai */ }
-}
-async function loadNews(){
-  try{
-    const r = await fetch("https://hn.algolia.com/api/v1/search?query=artificial%20intelligence&tags=story&hitsPerPage=5");
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    const j = await r.json();
-    const hits = (j.hits || []).filter(h => h.title && h.url);
-    if(hits.length < 3) return;
-    document.getElementById("ainews").innerHTML = hits.map(h =>
-      "<li>" + esc(h.title.length > 110 ? h.title.slice(0, 110) + "…" : h.title) +
-      ' <span class="src"><a href="' + esc(h.url) + '" target="_blank" rel="noopener">Hacker News</a></span></li>'
-    ).join("");
-  }catch(e){ /* snapshot hi rehta hai */ }
-}
-function tickClock(){
-  const d = new Date();
-  const s = d.toLocaleString("en-GB", {timeZone:"Asia/Karachi", weekday:"long", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit", second:"2-digit", hour12:true});
-  document.getElementById("clock").textContent = s + " PKT";
-}
-function daysTo(y, m, d){
-  const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Karachi"}));
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const target = new Date(y, m - 1, d);
-  return Math.round((target - today) / 86400000);
-}
-function countdowns(){
-  const h = daysTo(2026, 11, 15);
-  const u = daysTo(2026, 11, 22);
-  document.getElementById("cd-hifz").textContent = h > 0 ? h + " din baqi" : (h === 0 ? "aaj hai" : "ho gaya");
-  document.getElementById("cd-umair").textContent = u > 0 ? u + " din baqi" : (u === 0 ? "aaj hai" : "ho gaya");
-  const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Karachi"}));
-  let y = now.getFullYear(), m = now.getMonth();
-  let d10 = new Date(y, m, 10);
-  if(d10 < new Date(y, m, now.getDate())) d10 = new Date(y, m + 1, 10);
-  const w = Math.round((d10 - new Date(y, m, now.getDate())) / 86400000);
-  document.getElementById("cd-wifi").textContent = w > 0 ? "10th tak " + w + " din baqi" : (w === 0 ? "10th aaj hai" : "");
-}
-async function loadAll(){
-  try{ await loadGitHub(); }catch(e){ /* fetch na chale to save shuda halat hi rehti hai */ }
-  loadWeather();
-  loadNews();
-}
-tickClock();
-setInterval(tickClock, 1000);
-countdowns();
-loadAll();
-setInterval(loadAll, 10*60*1000);
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function jget(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function jset(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function pktNow(){return new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Karachi"}))}
+function fmtD(ms){var h=Math.floor(ms/36e5),d=Math.floor(h/24);return d>0?d+"d "+(h%24)+"h":h+"h "+Math.floor(ms%36e5/6e4)+"m"}
+function parsePkt(s){var m=s.match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})/);if(!m)return null;return new Date(m[1]+"-"+m[2]+"-"+m[3]+"T"+m[4]+":"+m[5]+":00+05:00")}
+function ago(ms){var m=Math.round(ms/6e4);return m<60?m+" min ago":m<2880?Math.round(m/60)+" h ago":Math.round(m/1440)+" days ago"}
+function hm(d,tz){return d.toLocaleString("en-GB",{timeZone:"Asia/Karachi",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}
+
+/* theme */
+var TH=jget("pd_theme","dark");document.documentElement.setAttribute("data-theme",TH);
+$("bTheme").onclick=function(){TH=TH==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",TH);jset("pd_theme",TH)};
+$("bPrint").onclick=function(){window.print()};
+
+/* card layout: reorder + collapse */
+var cards=[].slice.call(document.querySelectorAll(".card")),ids=cards.map(function(c){return c.dataset.id});
+var LAY=jget("pd_lay",{order:[],closed:[]});
+var order=LAY.order.filter(function(i){return ids.indexOf(i)>-1});ids.forEach(function(i){if(order.indexOf(i)<0)order.push(i)});
+cards.forEach(function(c){var h=document.createElement("div");h.className="ch";
+ h.innerHTML='<h2>'+c.dataset.title+'</h2><span class="ctl"><button class="ib" data-a="up" aria-label="Move up">&#8593;</button><button class="ib" data-a="dn" aria-label="Move down">&#8595;</button><button class="ib" data-a="tg" aria-expanded="true" aria-label="Collapse">&#8211;</button></span>';c.prepend(h)});
+function applyLay(){cards.forEach(function(c){var i=c.dataset.id;c.style.order=order.indexOf(i);var cl=LAY.closed.indexOf(i)>-1;c.classList.toggle("closed",cl);var t=c.querySelector('[data-a=tg]');t.setAttribute("aria-expanded",!cl);t.innerHTML=cl?"+":"&#8211;";t.setAttribute("aria-label",cl?"Expand":"Collapse")})}
+$("grid").addEventListener("click",function(e){var b=e.target.closest("[data-a]");if(!b)return;var id=b.closest(".card").dataset.id,p=order.indexOf(id),a=b.dataset.a;
+ if(a==="tg"){var k=LAY.closed.indexOf(id);k>-1?LAY.closed.splice(k,1):LAY.closed.push(id)}
+ else{var q=a==="up"?p-1:p+1;if(q<0||q>=order.length)return;order.splice(p,1);order.splice(q,0,id)}
+ LAY.order=order;jset("pd_lay",LAY);applyLay()});
+$("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("pd_lay",LAY);applyLay()};
+applyLay();
+
+/* agent health + tokens + alerts */
+var SEEN={muse:new Date("2026-11-13T22:01:00+05:00"),meem:new Date("2026-11-13T23:02:00+05:00")};
+var ASOF=new Date("2026-11-13T23:15:00+05:00");
+var TOK=[{n:"Muse",pct:4,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:100,x:"Add-on: 14% used, 859M left",reset:"2026-11-14T00:29:00+05:00"}];
+var QA="Meem has 2 posts waiting for QA (#127 video and corrected Urdu audio).";
+function evaluate(){var A=[],now=new Date(),th="";
+ [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
+  $("d"+a[1]).className="dot "+c;$("t"+a[1]).textContent=l+", checked "+ago(age);
+  if(c!=="ok")A.push({l:c,t:a[1]+" has not checked in for "+fmtD(age)+"."})});
+ TOK.forEach(function(t){var rs=new Date(t.reset),left=rs-now,m,cl="";
+  if(left<=0)m="The reset time has passed. The weekly allowance should be fresh; confirm in the app.";
+  else if(t.pct>=100){m="Weekly tokens are used up, but work continues on additional tokens. Weekly allowance resumes in "+fmtD(left)+".";cl="warn"}
+  else{m="Weekly allowance resets in "+fmtD(left)+".";cl=t.pct>=60?"warn":""}
+  th+='<div class="meter"><div class="mh"><span>'+t.n+" weekly</span><span>"+t.pct+'% used</span></div><div class="bar '+cl+'"><i style="width:'+Math.min(t.pct,100)+'%"></i></div><div class="dim">'+t.x+'</div><div>'+m+'</div></div>'});
+ $("tokens").innerHTML=th;
+ A.push({l:"warn",t:QA});
+ var lv=A.some(function(a){return a.l==="bad"})?"bad":A.length?"warn":"ok";
+ $("alerts").innerHTML='<div class="alert '+lv+'"><strong>'+(A.length?A.length+(A.length>1?" things need":" thing needs")+" attention":"All systems normal")+'</strong>'+(A.length?"<ul>"+A.map(function(a){return "<li>"+esc(a.t)+"</li>"}).join("")+"</ul>":"")+"</div>"}
+
+/* clock */
+function tick(){var n=new Date();$("clock").textContent=n.toLocaleTimeString("en-GB",{timeZone:"Asia/Karachi",hour12:false});
+ $("dateline").textContent=n.toLocaleDateString("en-GB",{timeZone:"Asia/Karachi",weekday:"long",day:"numeric",month:"long",year:"numeric"})+" PKT";}
+setInterval(tick,1000);
+/* events + calendar */
+var EV=[{n:"Hifz Dastar Bandi ceremony",d:"2026-11-15T08:00:00+05:00",w:"Sunday 15 Nov, about 08:00 PKT"},{n:"Umair's wedding",d:"2026-11-22T00:00:00+05:00",w:"Sunday 22 Nov, reminder on 19 Nov"}];
+function dl(t){var d=t-new Date();if(d<=0)return "Today or done";var n=Math.ceil(d/864e5);return n===1?"Tomorrow":n+" days"}
+function events(){var n=pktNow(),y=n.getFullYear(),m=n.getMonth(),d=n.getDate(),tg,lb;
+ if(d<5){tg=new Date(y,m,5);lb="Ask on the 5th"}else if(d<10){tg=new Date(y,m,10);lb="Deadline on the 10th"}else{tg=new Date(y,m+1,5);lb="Ask on the next 5th"}
+ var dd=Math.ceil((tg-new Date(y,m,d))/864e5);
+ $("up").innerHTML=EV.map(function(e){return "<li><div>"+esc(e.n)+"<small>"+e.w+'</small></div><span class="count">'+dl(new Date(e.d))+"</span></li>"}).join("")+
+  '<li><div>WiFi payment, 1500 PKR<small>Monthly. '+lb+'</small></div><span class="count">'+(dd===0?"Today":dd+" days")+"</span></li>";
+ var ev={},first=new Date(y,m,1),off=(first.getDay()+6)%7,dim=new Date(y,m+1,0).getDate();
+ EV.forEach(function(e){var p=new Date(new Date(e.d).toLocaleString("en-US",{timeZone:"Asia/Karachi"}));if(p.getFullYear()===y&&p.getMonth()===m)ev[p.getDate()]=1});
+ var h='<div class="cm">'+n.toLocaleDateString("en-GB",{month:"long",year:"numeric"})+'</div><div class="cg">'+"MTWTFSS".split("").map(function(x){return '<span class="dw">'+x+"</span>"}).join("");
+ for(var i=0;i<off;i++)h+="<span></span>";
+ for(var k=1;k<=dim;k++)h+='<span class="cd'+(k===d?" td":"")+(ev[k]?" ev":"")+(k===5||k===10?" wf":"")+'">'+k+"</span>";
+ $("cal").innerHTML=h+"</div>"}
+
+/* live data */
+var RAW="https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/";
+var ROWS=[["now","Doing now"],["done","Last completed"],["next","Up next"],["queue","In queue"]];
+function parseState(t){var o={},s=(t.split("## State")[1]||"").split("## Out")[0];s.split("\n").forEach(function(l){var m=l.match(/^-\s*([a-z_]+):\s*(.*)$/);if(m)o[m[1]]=m[2].trim()});return o}
+async function loadGithub(){var ok=false;
+ for(var a of [["muse","content.md"],["meem","uploader.md"]]){try{var r=await fetch(RAW+a[1],{cache:"no-store"});if(!r.ok)continue;var tx=await r.text(),st=parseState(tx),h="";
+  ROWS.forEach(function(p){if(st[p[0]])h+='<div class="row"><b>'+p[1]+"</b>"+esc(st[p[0]])+"</div>"});
+  if(h){$(a[0]+"-state").innerHTML=h;ok=true}
+  var lk=tx.split("## State")[0],m=lk.match(/-\s*checked:\s*(.+)/);if(m){var d=parsePkt(m[1].trim());if(d)SEEN[a[0]]=d}
+  if(a[0]==="muse"){var num=(st.now||st.done||"").match(/#(\d+)/);if(num)$("heroNum").textContent="#"+num[1];if(st.done)$("heroSub").textContent=st.done.length>100?st.done.slice(0,100)+"…":st.done;if(st.next)$("heroNext").textContent="Up next: "+st.next;}}catch(e){}}
+ var b=$("livemark");b.textContent=ok?"Live":"Saved snapshot";b.classList.toggle("live",ok);
+ try{var r2=await fetch("https://api.github.com/repos/FileifyPK/muse-coordination/commits?per_page=8");if(r2.ok){var cs=await r2.json();if(cs.length){$("feed").innerHTML=cs.map(function(c){return "<li>"+esc(c.commit.message.split("\n")[0])+"<time>"+hm(new Date(c.commit.author.date))+" PKT</time></li>"}).join("");$("feedsrc").textContent="Live: latest GitHub commits"}}}catch(e){}
+ evaluate()}
+var WMO={0:"clear sky",1:"mostly clear",2:"partly cloudy",3:"overcast",45:"fog",48:"fog",51:"light drizzle",53:"drizzle",55:"drizzle",61:"light rain",63:"rain",65:"heavy rain",71:"light snow",73:"snow",75:"heavy snow",80:"light showers",81:"showers",82:"heavy showers",95:"thunderstorm",96:"thunderstorm with hail",99:"thunderstorm with hail"};
+async function loadWeather(){try{var r=await fetch("https://api.open-meteo.com/v1/forecast?latitude=32.49&longitude=74.52&current=temperature_2m,weather_code,relative_humidity_2m&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FKarachi&forecast_days=3");if(!r.ok)return;var j=await r.json(),c=j.current,d=j.daily;
+ $("weather").innerHTML="<b>Sialkot "+Math.round(c.temperature_2m)+"°C</b>, "+(WMO[c.weather_code]||"")+", humidity "+c.relative_humidity_2m+"%. Today "+Math.round(d.temperature_2m_max[0])+"°/"+Math.round(d.temperature_2m_min[0])+"°, tomorrow "+Math.round(d.temperature_2m_max[1])+"°/"+Math.round(d.temperature_2m_min[1])+"°"}catch(e){}}
+async function loadNews(){try{var r=await fetch("https://hn.algolia.com/api/v1/search?query=artificial%20intelligence&tags=story&hitsPerPage=5");if(!r.ok)return;var j=await r.json(),h=(j.hits||[]).filter(function(x){return x.title}).slice(0,5);if(!h.length)return;
+ $("news-list").innerHTML=h.map(function(x){var u=x.url||"https://news.ycombinator.com/item?id="+x.objectID,host="";try{host=new URL(u).hostname.replace(/^www\./,"")}catch(e){}
+  return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(x.title)+"</a><small>"+esc(host)+" &middot; "+new Date(x.created_at).toLocaleDateString("en-GB",{day:"numeric",month:"short"})+"</small></li>"}).join("");
+ $("news-src").textContent="Live: Hacker News, "+new Date().toLocaleTimeString("en-GB",{timeZone:"Asia/Karachi",hour:"2-digit",minute:"2-digit"})+" PKT"}catch(e){}}
+
+function refreshAll(){evaluate();events();loadGithub();loadWeather();loadNews()}
+$("bRefresh").onclick=refreshAll;
+tick();refreshAll();
+setInterval(refreshAll,6e5);setInterval(function(){evaluate();events()},6e4);
+setTimeout(function(){$("ring").style.strokeDashoffset=238.8*0.2},300);
 </script>
 </body>
 </html>
