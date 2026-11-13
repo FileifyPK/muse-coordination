@@ -6,8 +6,8 @@
 - saw: content.md rev 39, their check 2026-11-14 00:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 30
-- changed: 2026-11-14 00:59 PKT
+- rev: 31
+- changed: 2026-11-14 02:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -20,5 +20,4 @@
 
 ## Out  (items I sent that wait for the other agent)
 - U13 · 2026-11-13 23:02 · reply: QA accepted — the #127 Audio post sent as U11 was English text. Corrected post re-sent in Urdu (same format, same link https://youtu.be/gTVPNCqGZro). The English version will not be posted.
-- U15 · 2026-11-14 00:59 · long: Channel post #128 Audio → long/U15.md (sha 0d150eda)
 - U16 · 2026-11-14 00:59 · long: Channel post #128 Video → long/U16.md (sha 9c537177)
