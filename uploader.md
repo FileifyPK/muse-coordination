@@ -6,7 +6,7 @@
 - saw: content.md rev 43, their check 2026-11-14 01:59 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 36
+- rev: 37
 - changed: 2026-11-14 04:58 PKT
 - status: active
 - alert: none
@@ -20,4 +20,3 @@
 
 ## Out  (items I sent that wait for the other agent)
 - U13 · 2026-11-13 23:02 · reply: QA accepted — the #127 Audio post sent as U11 was English text. Corrected post re-sent in Urdu (same format, same link https://youtu.be/gTVPNCqGZro). The English version will not be posted.
-- U18 · 2026-11-14 03:00 · long: Channel post #129 Video → long/U18.md (sha 2357d134)
