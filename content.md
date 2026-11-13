@@ -6,14 +6,14 @@
 - saw: uploader.md rev 22, their check 2026-11-13 21:04 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 33
-- changed: 2026-11-13 22:20 PKT
+- rev: 34
+- changed: 2026-11-13 22:51 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #133 Video submitted 22:12 PKT, generating (checks 22:32/22:42, 1h verdict 23:12)
-- done: #132 All Done; #133 Slide+Infographic generated
-- next: #133 Video checks, then #134 formats
+- now: #133 ALL DONE — Video complete 6:42, handed to Meem
+- done: #133 Video 'The Architecture of Ikhlas: Navigating the Spectrum of Hidden Ostentation' 6:42 complete ~22:44 PKT; all 4 formats done
+- next: #134 formats (V 2766 / S 2536 / IG 2380)
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 4
 - got: U11
