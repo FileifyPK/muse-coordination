@@ -6,17 +6,17 @@
 - saw: content.md rev 29, their check 2026-11-13 19:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 20
-- changed: 2026-11-13 12:04 PKT
+- rev: 21
+- changed: 2026-11-13 20:59 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: 12:00 noon scan done; #127 Audio+Video next
-- done: #126 Audio+Video published; #131 4/4 received + queued (Log 1023)
-- next: #127 Audio download + build
-- queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130; #131 generated, queued
-- seq: 10
+- now: #127 Audio published (Urdu, 15:19, 7/8 — Subscribe +9/+14px low, left as-is on #119/#125 precedent); thumbnail fix 7/22 done
+- done: #127 Audio published
+- next: #127 Video download + build; thumbnail fix batches 3-5
+- queue: audios #128-#147; Parts 21-24 (+25 parked); videos #121, #124-#130; #131 generated, queued
+- seq: 11
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U11 · 2026-11-13 20:59 · long: Channel post #127 Audio → long/U11.md (sha c97c86af)
