@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sacred Knowledge — Pipeline Dashboard</title>
+<title>Sacred Knowledge — Pipeline Dashboard v2</title>
 <style>
   :root{--navy:#041A3C;--gold:#D5A322;--gold2:#F2CB60;--ivory:#F3E7CD;--emerald:#34D399;--muted:#9FB0CC}
   *{box-sizing:border-box}
   body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ivory);background:var(--navy);background-image:radial-gradient(600px 300px at 15% -5%,rgba(213,163,34,.20),transparent 60%),radial-gradient(500px 300px at 95% 10%,rgba(52,211,153,.13),transparent 60%),linear-gradient(180deg,#041A3C,#071E44 60%,#041A3C);min-height:100vh;padding:20px 16px 32px}
-  .wrap{max-width:760px;margin:0 auto}
+  .wrap{max-width:860px;margin:0 auto}
   h1{font-size:22px;color:var(--gold2);margin:6px 0 4px;line-height:1.3}
   .sub{color:var(--muted);font-size:14px;margin-bottom:16px;line-height:1.5}
   .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
@@ -24,6 +24,15 @@
   .row{margin:10px 0;line-height:1.5}
   .row b{display:block;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
   .row span{font-size:14.5px}
+  .row .small{font-size:12.5px;color:var(--muted)}
+  .news{margin:0;padding-left:18px}
+  .news li{margin:8px 0;line-height:1.45;font-size:14.5px}
+  .news a{color:var(--gold2);text-decoration:none}
+  .news a:hover{text-decoration:underline}
+  .news .src{font-size:12px;color:var(--muted)}
+  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .links a{display:inline-block;background:rgba(213,163,34,.16);border:1px solid rgba(213,163,34,.5);color:var(--ivory);text-decoration:none;border-radius:10px;padding:8px 12px;font-size:13.5px;font-weight:600}
+  .links a:hover{background:rgba(213,163,34,.32)}
   .note{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}
 </style>
 </head>
@@ -32,25 +41,67 @@
 <h1>🧭 Sacred Knowledge — Pipeline Dashboard</h1>
 <div class="sub">Aap ke kaam ki taaza surat-e-haal — Muse aur Meem dono ki.</div>
 <div class="bar">
+  <span class="pill"><span id="clock">—</span></span>
+  <span class="pill"><span id="weather">Sialkot: 20°C Smoke (snapshot 13 Nov 23:15 PKT)</span></span>
   <span class="pill"><span class="dot" id="livedot"></span><span id="livetext">Save shuda halat</span></span>
-  <span class="meta" id="updated">Aakhri update: 13 Nov, raat 10:50 PKT</span>
-  <button onclick="load()">↻ Taaza karein</button>
+  <span class="meta" id="updated">Aakhri update: 13 Nov, raat 11:30 PKT</span>
+  <button onclick="loadAll()">↻ Taaza karein</button>
 </div>
 <div class="grid">
   <div class="card" id="muse"><h2>Muse — Studio ka kaam</h2>
-    <div class="row"><b>Abhi kya ho raha hai</b><span>#133 ALL DONE ho gaya — ab #134 formats ki tayari hai</span></div>
-    <div class="row"><b>Aakhri mukammal kaam</b><span>#133 Video (6:42, "The Architecture of Ikhlas") mukammal; Audio + Slide + Infographic bhi done</span></div>
-    <div class="row"><b>Agla kaam</b><span>#134 formats submit karna (Video, Slide, Infographic)</span></div>
-    <div class="row"><b>Qataar me</b><span>#134, #135 formats; audios #148–#150 us ke baad</span></div>
+    <div class="row"><b>Abhi kya ho raha hai</b><span>#133 ALL DONE — Video complete 6:42, handed to Meem</span></div>
+    <div class="row"><b>Aakhri mukammal kaam</b><span>#133 Video 'The Architecture of Ikhlas' 6:42 complete ~22:44 PKT; all 4 formats done</span></div>
+    <div class="row"><b>Agla kaam</b><span>#134 formats (V 2766 / S 2536 / IG 2380)</span></div>
+    <div class="row"><b>Qataar me</b><span>audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130</span></div>
+    <div class="row"><b>All Done</b><span>#116–#133 (18 topics)</span></div>
+    <div class="row"><span class="small">Snapshot: content.md rev 34, 13 Nov 22:51 PKT</span></div>
   </div>
   <div class="card" id="meem"><h2>Meem — Upload ka kaam</h2>
-    <div class="row"><b>Abhi kya ho raha hai</b><span>#127 Video download + build ho raha hai</span></div>
-    <div class="row"><b>Aakhri mukammal kaam</b><span>#127 Audio published (aaj, Urdu, 15:19); #126, #125, #124 bhi published</span></div>
-    <div class="row"><b>Agla kaam</b><span>#128 Audio, phir qataar ke mutabiq</span></div>
-    <div class="row"><b>Qataar me</b><span>audios #128–#147; Al-An'am Parts 21–24 (Part 25 built, parked); videos #121, #127–#130; #131</span></div>
+    <div class="row"><b>Abhi kya ho raha hai</b><span>#127 Audio+Video published; #133 Video handoff received (6:42)</span></div>
+    <div class="row"><b>Aakhri mukammal kaam</b><span>#127 Audio (Urdu 15:19) + Video (EN 7:03) published; #133 Video handed over, queued</span></div>
+    <div class="row"><b>Agla kaam</b><span>#128 downstream (oldest first); #133 Video download/package/upload in queue order</span></div>
+    <div class="row"><b>Qataar me</b><span>audios #128-#147; videos #128-#133</span></div>
+    <div class="row"><b>Post pending</b><span>#127 Video post (U12) aur corrected Urdu #127 Audio post (U14) 23:01-23:02 ko aaye, QA pending</span></div>
+    <div class="row"><span class="small">Snapshot: uploader.md rev 25, 13 Nov 23:02 PKT</span></div>
+  </div>
+  <div class="card"><h2>Token aur quota</h2>
+    <div class="row"><b>Muse</b><span>Weekly 4% used, additional 2% (7.8B baqi), reset 20 Nov 04:40 PKT</span></div>
+    <div class="row"><b>Meem</b><span>Weekly 100% used, additional 14% used (859M baqi), reset 14 Nov 00:29 PKT</span></div>
+    <div class="row"><b>NotebookLM</b><span>#133 Video submit ho gaya, abhi koi block nahi</span></div>
+    <div class="row"><span class="small">Checked 13 Nov 22:00 PKT</span></div>
+  </div>
+  <div class="card"><h2>AI News</h2>
+    <ul class="news" id="ainews">
+      <li>Claude Fable 5.2 (Anthropic, 9 Nov) — index top, $8/$40, 20% sasta <span class="src"><a href="https://www.swarchitect.net/en/ai-launches-2026-11/" target="_blank" rel="noopener">swarchitect</a></span></li>
+      <li>Gemini 4 Carbon GA (Google, 10 Nov) — $2/$10 intro 30 Nov tak <span class="src"><a href="https://csuite.so/blog/ai-models-roundup-november-2026" target="_blank" rel="noopener">csuite</a></span></li>
+      <li>Meta Muse Ember (9 Nov) — sab se chhota model, $0.10/$0.50 per 1M, 1M context <span class="src"><a href="https://pondero.ai/news/2026-11-10-daily-brief/" target="_blank" rel="noopener">pondero</a></span></li>
+      <li>Qwen4-Max-Preview (Alibaba, 11 Nov) — preview 25 Nov tak <span class="src"><a href="https://forum.astracruz.com/category/8/new-ai-model-releases" target="_blank" rel="noopener">astracruz</a></span></li>
+      <li>Gemini Omni 1.2 Flash GA (5 Nov) — video with audio, 15 sec clips, 30% sasta <span class="src"><a href="https://byobot.ai/ai-news/ai-daily-newsstand-november-8-2026" target="_blank" rel="noopener">byobot</a></span></li>
+    </ul>
+    <div class="row"><span class="small">Snapshot 13 Nov raat; live koshish Hacker News se hoti hai</span></div>
+  </div>
+  <div class="card"><h2>Aane wale kaam</h2>
+    <div class="row"><b>Hifz Dastar Bandi</b><span>Sunday 15 Nov 2026 ~08:00 — <span id="cd-hifz">—</span></span></div>
+    <div class="row"><b>Umair ki shadi</b><span>Sunday 22 Nov 2026 (reminder 19 Nov) — <span id="cd-umair">—</span></span></div>
+    <div class="row"><b>WiFi 1500 PKR</b><span>5th ko poochna, 10th deadline — <span id="cd-wifi">—</span></span></div>
+  </div>
+  <div class="card"><h2>Tafsir aur PPTX</h2>
+    <div class="row"><b>Al-An'am (006)</b><span>25/25 audios done, Parts 1-20 published, 21-25 pending Meem (Part 25 built, parked)</span></div>
+    <div class="row"><b>PPTX Slides</b><span>10/10 completed</span></div>
+  </div>
+  <div class="card"><h2>Quick links</h2>
+    <div class="links">
+      <a href="https://www.notion.so/8c612626014a82e7910381b0a26a4e5b" target="_blank" rel="noopener">Notion — Production Queue</a>
+      <a href="https://www.notion.so" target="_blank" rel="noopener">Notion — Uploaded Videos</a>
+      <a href="https://studio.youtube.com" target="_blank" rel="noopener">YouTube Studio</a>
+      <a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a>
+      <a href="https://github.com/FileifyPK/muse-coordination" target="_blank" rel="noopener">GitHub coordination</a>
+      <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>
+    </div>
   </div>
 </div>
-<div class="note">Yeh page har 10 minute khud refresh hota hai.</div>
+<div class="note">Yeh page har 10 minute khud refresh hota hai. Dekhna muft hai, koi token nahi lagta.</div>
 </div>
 <script>
 const FILES = {
@@ -58,6 +109,10 @@ const FILES = {
   meem: "https://raw.githubusercontent.com/FileifyPK/muse-coordination/main/uploader.md"
 };
 const LABELS = {now:"Abhi kya ho raha hai", done:"Aakhri mukammal kaam", next:"Agla kaam", queue:"Qataar me"};
+const EXTRA = {
+  muse: '<div class="row"><b>All Done</b><span>#116–#133 (18 topics)</span></div>',
+  meem: '<div class="row"><b>Post pending</b><span>#127 Video post (U12) aur corrected Urdu #127 Audio post (U14) 23:01-23:02 ko aaye, QA pending</span></div>'
+};
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
 function parseState(text){
   const out = {};
@@ -77,24 +132,78 @@ function render(id, state){
       html += '<div class="row"><b>'+LABELS[k]+'</b><span>'+esc(state[k])+'</span></div>';
     }
   });
+  html += EXTRA[id];
   el.innerHTML = html;
 }
-async function load(){
-  try{
-    for(const id of ["muse","meem"]){
-      const r = await fetch(FILES[id], {cache:"no-store"});
-      if(!r.ok) throw new Error("HTTP "+r.status);
-      render(id, parseState(await r.text()));
-    }
-    document.getElementById("livedot").classList.add("live");
-    document.getElementById("livetext").textContent = "Live — GitHub se taza";
-    document.getElementById("updated").textContent = "Aakhri update: " + new Date().toLocaleString("en-GB", {timeZone:"Asia/Karachi"}) + " PKT";
-  }catch(e){
-    /* fetch na chale to save shuda halat hi rehti hai */
+async function loadGitHub(){
+  for(const id of ["muse","meem"]){
+    const r = await fetch(FILES[id], {cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    render(id, parseState(await r.text()));
   }
+  document.getElementById("livedot").classList.add("live");
+  document.getElementById("livetext").textContent = "Live — GitHub se taza";
+  document.getElementById("updated").textContent = "Aakhri update: " + new Date().toLocaleString("en-GB", {timeZone:"Asia/Karachi"}) + " PKT";
 }
-load();
-setInterval(load, 10*60*1000);
+const WMO = {0:"Clear",1:"Mostly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Fog",51:"Light drizzle",53:"Drizzle",55:"Dense drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Light snow",73:"Snow",75:"Heavy snow",80:"Light showers",81:"Showers",82:"Heavy showers",95:"Thunderstorm",96:"Thunderstorm + hail",99:"Thunderstorm + hail"};
+async function loadWeather(){
+  try{
+    const u = "https://api.open-meteo.com/v1/forecast?latitude=32.49&longitude=74.52&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FKarachi";
+    const r = await fetch(u);
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const j = await r.json();
+    const t = Math.round(j.current.temperature_2m);
+    const c = WMO[j.current.weather_code] || "—";
+    const hi = Math.round(j.daily.temperature_2m_max[0]), lo = Math.round(j.daily.temperature_2m_min[0]);
+    document.getElementById("weather").textContent = "Sialkot: " + t + "°C " + c + " (aaj " + lo + "–" + hi + "°C)";
+  }catch(e){ /* snapshot hi rehta hai */ }
+}
+async function loadNews(){
+  try{
+    const r = await fetch("https://hn.algolia.com/api/v1/search?query=artificial%20intelligence&tags=story&hitsPerPage=5");
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const j = await r.json();
+    const hits = (j.hits || []).filter(h => h.title && h.url);
+    if(hits.length < 3) return;
+    document.getElementById("ainews").innerHTML = hits.map(h =>
+      "<li>" + esc(h.title.length > 110 ? h.title.slice(0, 110) + "…" : h.title) +
+      ' <span class="src"><a href="' + esc(h.url) + '" target="_blank" rel="noopener">Hacker News</a></span></li>'
+    ).join("");
+  }catch(e){ /* snapshot hi rehta hai */ }
+}
+function tickClock(){
+  const d = new Date();
+  const s = d.toLocaleString("en-GB", {timeZone:"Asia/Karachi", weekday:"long", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit", second:"2-digit", hour12:true});
+  document.getElementById("clock").textContent = s + " PKT";
+}
+function daysTo(y, m, d){
+  const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Karachi"}));
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const target = new Date(y, m - 1, d);
+  return Math.round((target - today) / 86400000);
+}
+function countdowns(){
+  const h = daysTo(2026, 11, 15);
+  const u = daysTo(2026, 11, 22);
+  document.getElementById("cd-hifz").textContent = h > 0 ? h + " din baqi" : (h === 0 ? "aaj hai" : "ho gaya");
+  document.getElementById("cd-umair").textContent = u > 0 ? u + " din baqi" : (u === 0 ? "aaj hai" : "ho gaya");
+  const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Karachi"}));
+  let y = now.getFullYear(), m = now.getMonth();
+  let d10 = new Date(y, m, 10);
+  if(d10 < new Date(y, m, now.getDate())) d10 = new Date(y, m + 1, 10);
+  const w = Math.round((d10 - new Date(y, m, now.getDate())) / 86400000);
+  document.getElementById("cd-wifi").textContent = w > 0 ? "10th tak " + w + " din baqi" : (w === 0 ? "10th aaj hai" : "");
+}
+async function loadAll(){
+  try{ await loadGitHub(); }catch(e){ /* fetch na chale to save shuda halat hi rehti hai */ }
+  loadWeather();
+  loadNews();
+}
+tickClock();
+setInterval(tickClock, 1000);
+countdowns();
+loadAll();
+setInterval(loadAll, 10*60*1000);
 </script>
 </body>
 </html>
