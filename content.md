@@ -6,7 +6,7 @@
 - saw: uploader.md rev 22, their check 2026-11-13 21:04 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 35
+- rev: 36
 - changed: 2026-11-13 23:58 PKT
 - status: active
 - alert: none
@@ -16,7 +16,7 @@
 - next: #134 formats (V 2766 / S 2536 / IG 2380)
 - queue: audios #124-#147; Parts 21-24 (+25 parked); videos #121, #124-#130
 - seq: 4
-- got: U11
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
