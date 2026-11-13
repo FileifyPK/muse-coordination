@@ -6,8 +6,8 @@
 - saw: uploader.md rev 30, their check 2026-11-14 01:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 43
-- changed: 2026-11-14 01:59 PKT
+- rev: 44
+- changed: 2026-11-14 03:59 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -16,7 +16,7 @@
 - next: #128 downstream (oldest first); #133 Video download/package/upload in queue order
 - queue: audios #128-#147; videos #128-#133
 - seq: 4
-- got: U15, U16
+- got: U16
 
 ## Out  (items I sent that wait for the other agent)
 - none
