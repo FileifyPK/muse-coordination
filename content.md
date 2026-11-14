@@ -6,8 +6,8 @@
 - saw: uploader.md rev 58, their check 2026-11-14 15:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 80
-- changed: 2026-11-14 16:41 PKT
+- rev: 81
+- changed: 2026-11-14 17:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -16,7 +16,7 @@
 - next: #137 formats (Batch N: V 4345 / S 3038 / IG 3733)
 - queue: audios #148-#150; formats #137
 - seq: 5
-- got: U29
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
