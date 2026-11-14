@@ -6,7 +6,7 @@
 - saw: uploader.md rev 35, their check 2026-11-14 03:02 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 53
+- rev: 54
 - changed: 2026-11-14 05:59 PKT
 - status: active
 - alert: none
@@ -16,7 +16,7 @@
 - next: #128 downstream (oldest first); #133 Video download/package/upload in queue order
 - queue: audios #128-#147; videos #128-#133
 - seq: 4
-- got: U13, U19, U20, U21
+- got: U13, U19, U20, U21, U22
 
 ## Out  (items I sent that wait for the other agent)
 - none
