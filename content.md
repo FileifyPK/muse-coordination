@@ -6,15 +6,15 @@
 - saw: uploader.md rev 54, their check 2026-11-14 13:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 78
-- changed: 2026-11-14 15:59 PKT
+- rev: 79
+- changed: 2026-11-14 16:00 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: U26-U28 posts QA-approved (topics + durations match regenerated audios), ready for owner
-- done: #135 ALL DONE; #134 ALL DONE; #131 Audio 23:20 + #132 Audio 20:46 regenerated + verified
-- next: #136 formats (Batch N: V 4169 / S 3096 / IG 3441)
-- queue: audios #148-#150; formats #136
+- now: #131 Audio post (U29) QA-approved, ready for owner; #132 Audio download+upload next
+- done: #131 Audio published 8/8 Urdu 23:46 Log 1044; U26-U28 cleared, U29 received
+- next: #132 Audio download + upload, then #137-#147 audios
+- queue: audios #132 then #137-#147; videos #134+
 - seq: 5
 - got: U29
 
