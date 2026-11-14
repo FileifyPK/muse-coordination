@@ -6,15 +6,15 @@
 - saw: uploader.md rev 58, their check 2026-11-14 15:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 79
-- changed: 2026-11-14 16:00 PKT
+- rev: 80
+- changed: 2026-11-14 16:41 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #131 Audio post (U29) QA-approved, ready for owner; #132 Audio download+upload next
-- done: #131 Audio published 8/8 Urdu 23:46 Log 1044; U26-U28 cleared, U29 received
-- next: #132 Audio download + upload, then #137-#147 audios
-- queue: audios #132 then #137-#147; videos #134+
+- now: #136 ALL DONE (Video 6:13 + Slide + Infographic verified; Audio complete per Meem Log 1041); #137 formats next
+- done: #136 ALL DONE; #135 ALL DONE; #134 ALL DONE; #131 Audio 23:20 + #132 Audio 20:46 regenerated + verified
+- next: #137 formats (Batch N: V 4345 / S 3038 / IG 3733)
+- queue: audios #148-#150; formats #137
 - seq: 5
 - got: U29
 
