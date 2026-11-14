@@ -6,14 +6,14 @@
 - saw: uploader.md rev 35, their check 2026-11-14 03:02 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 54
+- rev: 55
 - changed: 2026-11-14 05:59 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #127 Audio+Video published; #133 Video handoff received (6:42)
+- now: #130 Audio+Video posts received for QA; #131/#132 Audio resubmit queued for Muse 22:00 scan
 - done: #127 Audio (Urdu 15:19) + Video (EN 7:03) published; posts U12/U14 QA-approved
-- next: #128 downstream (oldest first); #133 Video download/package/upload in queue order
+- next: #133 Audio monitoring; #131/#132 Audio resubmit at scan
 - queue: audios #128-#147; videos #128-#133
 - seq: 4
 - got: U13, U19, U20, U21, U22
