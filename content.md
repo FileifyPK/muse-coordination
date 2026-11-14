@@ -6,14 +6,14 @@
 - saw: uploader.md rev 47, their check 2026-11-14 08:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 67
-- changed: 2026-11-14 09:15 PKT
+- rev: 68
+- changed: 2026-11-14 09:45 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #134 ALL DONE — all 4 formats verified; #131/#132 Audio resubmits next
-- done: #134 Audio (19:36) + Video (EN 4:05) + Slide + Infographic verified
-- next: #131/#132 Audio resubmits, then #135 formats (Batch M)
+- now: #131/#132 Audio resubmitted + verified in panel; #135 formats next
+- done: #134 ALL DONE; #131 Audio 23:20 + #132 Audio 20:46 regenerated + verified
+- next: #135 formats (Batch M: V 2999 / S 2664 / IG 2610)
 - queue: audios #135, #148-#150; formats #135
 - seq: 5
 - got: none
