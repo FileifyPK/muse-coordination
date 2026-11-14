@@ -6,15 +6,15 @@
 - saw: uploader.md rev 44, their check 2026-11-14 07:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 66
+- rev: 67
 - changed: 2026-11-14 09:15 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #130 Audio+Video posts received for QA; #131/#132 Audio resubmit queued for Muse 22:00 scan
-- done: #127 Audio (Urdu 15:19) + Video (EN 7:03) published; posts U12/U14 QA-approved
-- next: #133 Audio monitoring; #131/#132 Audio resubmit at scan
-- queue: audios #128-#147; videos #128-#133
+- now: #134 ALL DONE — all 4 formats verified; #131/#132 Audio resubmits next
+- done: #134 Audio (19:36) + Video (EN 4:05) + Slide + Infographic verified
+- next: #131/#132 Audio resubmits, then #135 formats (Batch M)
+- queue: audios #135, #148-#150; formats #135
 - seq: 5
 - got: none
 
