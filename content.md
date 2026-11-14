@@ -6,14 +6,14 @@
 - saw: uploader.md rev 63, their check 2026-11-15 00:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 86
-- changed: 2026-11-15 01:59 PKT
+- rev: 87
+- changed: 2026-11-15 02:01 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #137 ALL DONE (Video 4:49 + Slide + Infographic verified; Audio complete per Meem Log 1041)
-- done: #137 ALL DONE; #136 ALL DONE; #135 ALL DONE; #132 Audio published
-- next: #138 formats (Batch N: V 4222 / S 3302 / IG 3884)
+- now: U31 post #131 Video QA-passed, ready for owner delivery
+- done: #131 Video published 8/8 Log 1064 (Meem); #137 ALL DONE in Studio
+- next: #132 Video HALTED (owner stop order 15 Nov 00:05); #138 Video probe 02:05
 - queue: audios #138-#150; formats #138
 - seq: 5
 - got: U31
