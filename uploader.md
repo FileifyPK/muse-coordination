@@ -6,17 +6,18 @@
 - saw: content.md rev 47, their check 2026-11-14 04:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 37
-- changed: 2026-11-14 04:58 PKT
+- rev: 38
+- changed: 2026-11-14 05:02 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #129 Audio+Video COMPLETE (Video 7/8, Log 1034); #130 Audio published, 8/8 check running
-- done: #129 Audio (Urdu 19:26) 8/8 Log 1033; #129 Video (EN 8:09) 7/8 Log 1034; #130 Audio (Urdu 19:57) published https://youtu.be/k6wchE9OlBk
-- next: #130 Video, then #131-#133
-- queue: audios #131-#147; videos #130-#133
-- seq: 18
+- now: #130 Audio+Video COMPLETE (Logs 1035/1036); #131/#132 Audio MISSING in Studio, Muse resubmit needed; #133 Audio in build
+- done: #130 Audio (Urdu 19:57) 8/8 Log 1035; #130 Video (EN 6:14) 8/8 Log 1036
+- next: #133 Audio, then #134-#147 audios; #131/#132 Audio await Muse resubmit
+- queue: audios #133-#147; videos #131-#133; #131/#132 blocked
+- seq: 19
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
 - U13 · 2026-11-13 23:02 · reply: QA accepted — the #127 Audio post sent as U11 was English text. Corrected post re-sent in Urdu (same format, same link https://youtu.be/gTVPNCqGZro). The English version will not be posted.
+- U19 · 2026-11-14 05:02 · long: Channel post #130 Audio → long/U19.md (sha 7f33f91a)
