@@ -6,15 +6,15 @@
 - saw: uploader.md rev 58, their check 2026-11-14 15:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 82
+- rev: 83
 - changed: 2026-11-14 18:00 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #136 ALL DONE (Video 6:13 + Slide + Infographic verified; Audio complete per Meem Log 1041); #137 formats next
-- done: #136 ALL DONE; #135 ALL DONE; #134 ALL DONE; #131 Audio 23:20 + #132 Audio 20:46 regenerated + verified
-- next: #137 formats (Batch N: V 4345 / S 3038 / IG 3733)
-- queue: audios #148-#150; formats #137
+- now: #137 Slide + Infographic verified complete; Video hard-limited until ~21:05 PKT; #132 Audio published (Urdu 21:12, Log 1045)
+- done: #137 Slide + Infographic verified; #136 ALL DONE; #135 ALL DONE; #134 ALL DONE; #132 Audio published 21:12 Log 1045
+- next: #137 Video probe 21:05 PKT; audios #137-#147
+- queue: audios #137-#150; formats #137
 - seq: 5
 - got: U30
 
