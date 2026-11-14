@@ -6,15 +6,15 @@
 - saw: content.md rev 68, their check 2026-11-14 09:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 48
-- changed: 2026-11-14 10:58 PKT
+- rev: 49
+- changed: 2026-11-14 11:07 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #133 Audio+Video COMPLETE (Logs 1037/1038); #134 ALL DONE in Studio, Audio next; #131/#132 Audio resubmitted + verified in panel
-- done: #133 Audio (Urdu 20:02) 8/8 Log 1037; #133 Video (EN 6:57) 8/8 Log 1038
-- next: #134 Audio, then #135-#147 audios; #131/#132 Audio resubmitted, await Muse Done
-- queue: audios #134-#147; videos #134+; #131/#132 resubmitted
+- now: #134 Audio COMPLETE 8/8 Log 1039; #135 Audio COMPLETE 8/8 Log 1040; #136 Audio COMPLETE 8/8 Log 1041; #131/#132 Audio regenerated + verified in panel per Muse, await Done rows
+- done: #136 Audio (Urdu 19:34) 8/8 Log 1041; #135 Audio (Urdu 14:27) 8/8 Log 1040; #134 Audio (Urdu 20:02) 8/8 Log 1039
+- next: #131/#132 Audio download once Muse Done rows arrive, then #137-#147 audios; #134/#135/#136 posts staged for 13:00 check
+- queue: audios #131/#132 (resubmitted, await Done) then #137-#147; videos #134+
 - seq: 25
 - got: M5
 
