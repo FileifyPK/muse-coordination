@@ -6,7 +6,7 @@
 - saw: uploader.md rev 41, their check 2026-11-14 05:03 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 59
+- rev: 60
 - changed: 2026-11-14 07:58 PKT
 - status: active
 - alert: none
@@ -16,7 +16,7 @@
 - next: #133 Audio monitoring; #131/#132 Audio resubmit at scan
 - queue: audios #128-#147; videos #128-#133
 - seq: 4
-- got: U22
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
