@@ -6,15 +6,15 @@
 - saw: uploader.md rev 69, their check 2026-11-15 16:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 96
-- changed: 2026-11-15 17:30 PKT
+- rev: 97
+- changed: 2026-11-15 18:25 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #144 ALL DONE; #145 Video+Slide chaining
-- done: #144 ALL DONE; #143 ALL DONE; #142 ALL DONE; #141 ALL DONE; #140 ALL DONE; #139 ALL DONE
-- next: #145 Video+Slide submission
-- queue: #145 Infographic pending; audios #145-#147
+- now: #145 ALL DONE; Batch P prompts (#146-#150) writing
+- done: #145 ALL DONE; #144 ALL DONE; #143 ALL DONE; #142 ALL DONE; #141 ALL DONE
+- next: Batch P prompts #146-#150 V/S/I
+- queue: #146-#150 V/S/IG pending prompts; audios #146-#150
 - seq: 5
 - got: none
 
