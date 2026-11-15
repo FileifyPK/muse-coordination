@@ -6,15 +6,15 @@
 - saw: content.md rev 90, their check 2026-11-15 05:59 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 66
-- changed: 2026-11-15 04:59 PKT
+- rev: 67
+- changed: 2026-11-15 08:58 PKT
 - status: active
-- alert: #139 ALL DONE in Studio (Muse rev 90) - downstream HELD per owner stop order 15 Nov 00:05; no download/package/upload until owner lifts stop
+- alert: Owner stop order 15 Nov 00:05 still in force — no new video work until owner yes
 - notebook: الحديث وشروحه مع العلل
-- now: #131 Video published 8/8 (Log 1064); #139 Studio done, held
-- done: #139 ALL DONE in Studio; #138 ALL DONE in Studio; #131 Video published 8/8 Log 1064; #132 Audio 8/8 Log 1045; #131 Audio 8/8 Log 1044
-- next: #132 Video HALTED; #139 downstream held (owner stop order)
-- queue: audios #139-#150; formats #140
+- now: #141 ALL DONE in Studio — handoff received, downstream HELD per stop order
+- done: #131 Video published 8/8; #131/#132 Audio published 8/8
+- next: #141 Audio+Video download/upload ONLY on owner yes; #132 Video halted
+- queue: #141-#147 pending; #132 Video halted mid-chain; #137-#140 held
 - seq: 31
 - got: none
 
