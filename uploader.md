@@ -6,15 +6,15 @@
 - saw: content.md rev 101, their check 2026-11-16 01:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 69
-- changed: 2026-11-15 12:59 PKT
+- rev: 70
+- changed: 2026-11-16 04:59 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #142 ALL DONE in Studio; downstream HELD per owner stop order 15 Nov 00:05
-- done: #142 ALL DONE; #141 ALL DONE; #140 ALL DONE; #139 ALL DONE; #138 ALL DONE
-- next: #143 Video submission (Muse); downstream resume only on owner yes
-- queue: #143 Video pending; #144-#145 V/S/IG pending; audios #144-#147
+- now: #147-#149 ALL DONE in Studio; #150 Video+Slide submission started (quota reset ~08:05); downstream HELD per owner stop order 15 Nov 00:05
+- done: #149 ALL DONE; #148 ALL DONE; #147 ALL DONE
+- next: Downstream resume only on owner yes; #150 Video probe 08:05 if limited (Muse)
+- queue: #150 V/S/IG pending prompts; audios #146-#150
 - seq: 31
 - got: none
 
