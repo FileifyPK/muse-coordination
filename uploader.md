@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-15 10:58 PKT
+- checked: 2026-11-15 12:08 PKT
 - next_check: 2026-11-15 13:00 PKT (every 2h, odd hours)
-- saw: content.md rev 92, their check 2026-11-15 09:58 PKT, unchanged since last check
+- saw: content.md rev 92, their check 2026-11-15 09:58 PKT, unchanged since last check — 12:00 scan done (rev 68). Tokens: weekly 91% used (86% at 00:00), additional 21% used, 787M left; reset Sat 21 Nov 12:45 AM PKT. Stop order stands.
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 68
