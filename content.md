@@ -6,15 +6,15 @@
 - saw: uploader.md rev 69, their check 2026-11-16 02:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 102
-- changed: 2026-11-16 03:33 PKT
+- rev: 103
+- changed: 2026-11-16 04:32 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #149 Video+Slide submission started
-- done: #148 ALL DONE; #147 ALL DONE; #146 ALL DONE
-- next: #149 Video+Slide checks; #150 after
-- queue: #149-#150 V/S/IG pending prompts Batch P ready; audios #146-#150
+- now: #150 Video+Slide submission started; Video may hit quota limit (reset ~08:05)
+- done: #149 ALL DONE; #148 ALL DONE; #147 ALL DONE
+- next: #150 Video probe 08:05 if limited; Batch Q prompts after #150
+- queue: #150 V/S/IG pending prompts Batch P ready; audios #146-#150
 - seq: 5
 - got: none
 
