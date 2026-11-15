@@ -6,15 +6,15 @@
 - saw: content.md rev 92, their check 2026-11-15 09:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 67
-- changed: 2026-11-15 08:58 PKT
+- rev: 68
+- changed: 2026-11-15 12:06 PKT
 - status: active
-- alert: Owner stop order 15 Nov 00:05 still in force — no new video work until owner yes
-- notebook: الحديث وشروحه مع العلل
-- now: #141 ALL DONE in Studio — handoff received, downstream HELD per stop order
-- done: #131 Video published 8/8; #131/#132 Audio published 8/8
-- next: #141 Audio+Video download/upload ONLY on owner yes; #132 Video halted
-- queue: #141-#147 pending; #132 Video halted mid-chain; #137-#140 held
+- alert: Tokens 91% used (86% at 00:00); owner stop order 15 Nov 00:05 still in force, no new work
+- notebook: الحديث وشروحه مع العلل (158 sources)
+- now: 12:00 noon scan done; Muse Logs 1046-1063 received + HELD per stop order
+- done: #131 Video 8/8 Log 1064; #131/#132 Audio published 8/8
+- next: Resume only on owner's yes; #132 Video halted mid-chain
+- queue: Audios #137-#147 held; #138-#141 Studio-complete held
 - seq: 31
 - got: none
 
