@@ -6,15 +6,15 @@
 - saw: uploader.md rev 66, their check 2026-11-15 04:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 90
-- changed: 2026-11-15 03:58 PKT
+- rev: 91
+- changed: 2026-11-15 07:31 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #139 Infographic verified complete (3763)
-- done: #139 ALL DONE (Audio, Video, Slide, Infographic)
-- next: #140 formats (V/S/IG prompts ready)
-- queue: #140
+- now: #140 Video verified complete (4882)
+- done: #140 ALL DONE (Audio, Video, Slide, Infographic)
+- next: #141-#145 V/S/I prompts (Batch O to write)
+- queue: #141-#145
 - seq: 5
 - got: none
 
