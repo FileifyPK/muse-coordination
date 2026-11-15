@@ -6,15 +6,15 @@
 - saw: uploader.md rev 69, their check 2026-11-16 00:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 101
-- changed: 2026-11-16 00:10 PKT
+- rev: 102
+- changed: 2026-11-16 03:33 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #148 Slide+IG done; Video probe 03:05
-- done: #147 ALL DONE; #146 ALL DONE; #148 Slide+IG done
-- next: #148 Video probe 03:05 (+ backups); #149 after #148 Video
-- queue: #148 Video pending; #149-#150 V/S/IG pending prompts Batch P ready; audios #146-#150
+- now: #149 Video+Slide submission started
+- done: #148 ALL DONE; #147 ALL DONE; #146 ALL DONE
+- next: #149 Video+Slide checks; #150 after
+- queue: #149-#150 V/S/IG pending prompts Batch P ready; audios #146-#150
 - seq: 5
 - got: none
 
