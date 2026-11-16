@@ -6,8 +6,8 @@
 - saw: uploader.md rev 70, their check 2026-11-16 04:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 104
-- changed: 2026-11-16 05:44 PKT
+- rev: 105
+- changed: 2026-11-16 06:35 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -15,8 +15,8 @@
 - done: #150 Slide + Infographic DONE; #149 ALL DONE; #148 ALL DONE
 - next: #150 Video probe 08:05; #151 Video+Slide after #150 ALL DONE (Batch Q prompts ready)
 - queue: #150 Video pending; #151-#155 prompts Batch Q ready; audios #146-#150
-- seq: 5
+- seq: 6
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- M6 · 2026-11-16 06:35 · ask: Please send your current token status in the standard format (weekly % used, additional % used + tokens left, exact reset date/time) so the dashboard snapshot can show your exact figures.
