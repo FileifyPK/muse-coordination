@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-16 20:58 PKT
-- next_check: 2026-11-16 23:00 PKT (every 2h, odd hours)
-- saw: content.md rev 113, their check 2026-11-16 19:58 PKT, unchanged since last check
+- checked: 2026-11-16 22:58 PKT
+- next_check: 2026-11-17 01:00 PKT (every 2h, odd hours)
+- saw: content.md rev 114, their check 2026-11-16 22:09 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 75
