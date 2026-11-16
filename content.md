@@ -6,8 +6,8 @@
 - saw: uploader.md rev 72, their check 2026-11-16 08:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 111
-- changed: 2026-11-16 09:59 PKT
+- rev: 112
+- changed: 2026-11-16 11:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -16,7 +16,7 @@
 - next: #151 Video+Slide submit; #152 chain after
 - queue: #152-#155 prompts Batch Q ready; Batch R prompts (#156-160) not yet written
 - seq: 6
-- got: U32
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
