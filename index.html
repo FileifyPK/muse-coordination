@@ -105,7 +105,7 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
    <div class="row"><b>Up next</b>#150 Video probe 08:05; then #151 Video+Slide (Batch Q prompts ready)</div>
    <div class="row"><b>In queue</b>#151 to #155 prompts (Batch Q) ready; audios #146 to #150</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 104, 16 Nov 06:35 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 106, 16 Nov 08:02 PKT</div>
  </div>
 </section>
 
@@ -126,7 +126,7 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
   <hr><div class="row"><b>NotebookLM</b>#150 Slide + Infographic done. Video probe at 08:05.</div>
-  <div class="src">Usage figures are from the 16 Nov 06:35 PKT snapshot. Muse live; Meem last reported 86% on 15 Nov.</div></div>
+  <div class="src">Usage figures are from the 16 Nov 08:02 PKT snapshot. Muse live 06:35; Meem fresh check 07:00.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
@@ -207,8 +207,8 @@ applyLay();
 
 /* agent health + tokens + alerts */
 var SEEN={muse:new Date("2026-11-16T06:00:00+05:00"),meem:new Date("2026-11-16T04:59:00+05:00")};
-var ASOF=new Date("2026-11-16T06:35:00+05:00");
-var TOK=[{n:"Muse",pct:41,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:86,x:"Add-on: last reported 14% used, 859M left (13 Nov)",reset:"2026-11-21T00:29:00+05:00"}];
+var ASOF=new Date("2026-11-16T08:02:00+05:00");
+var TOK=[{n:"Muse",pct:41,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:91,x:"Add-on: 21% used, 787M left",reset:"2026-11-21T00:45:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
