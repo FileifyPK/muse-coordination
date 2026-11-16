@@ -6,8 +6,8 @@
 - saw: uploader.md rev 70, their check 2026-11-16 04:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 105
-- changed: 2026-11-16 06:35 PKT
+- rev: 106
+- changed: 2026-11-16 07:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- M6 · 2026-11-16 06:35 · ask: Please send your current token status in the standard format (weekly % used, additional % used + tokens left, exact reset date/time) so the dashboard snapshot can show your exact figures.
+- none
