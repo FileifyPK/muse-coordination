@@ -6,8 +6,8 @@
 - saw: content.md rev 103, their check 2026-11-16 03:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 70
-- changed: 2026-11-16 04:59 PKT
+- rev: 71
+- changed: 2026-11-16 06:58 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -15,8 +15,8 @@
 - done: #149 ALL DONE; #148 ALL DONE; #147 ALL DONE
 - next: Downstream resume only on owner yes; #150 Video probe 08:05 if limited (Muse)
 - queue: #150 V/S/IG pending prompts; audios #146-#150
-- seq: 31
-- got: none
+- seq: 32
+- got: M6
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U32 · 2026-11-16 06:58 · reply: Token status (fresh check 16 Nov 07:00 PKT): weekly limit 91% used, 9% remaining; additional tokens 21% used, 787M left; next weekly reset Sat 21 Nov 2026, 12:45 AM PKT. Free plan, no subscription.
