@@ -100,12 +100,12 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMuse"></i><span id="tMuse">Checking</span></div>
   <div id="muse-state">
-   <div class="row"><b>Doing now</b>#133 ALL DONE. Video complete (6:42), handed to Meem</div>
-   <div class="row"><b>Last completed</b>#133 video "The Architecture of Ikhlas" finished about 22:44 PKT, all 4 formats done</div>
-   <div class="row"><b>Up next</b>#134 formats (V 2766 / S 2536 / IG 2380)</div>
-   <div class="row"><b>In queue</b>Audios #124 to #147; Parts 21 to 24 (Part 25 parked); videos #121 and #124 to #130</div>
+   <div class="row"><b>Doing now</b>#150 Slide + Infographic DONE (verified 04:58 + 05:39); Video probe at 08:05</div>
+   <div class="row"><b>Last completed</b>#149 ALL DONE (04:28); #148 ALL DONE (03:31)</div>
+   <div class="row"><b>Up next</b>#150 Video probe 08:05; then #151 Video+Slide (Batch Q prompts ready)</div>
+   <div class="row"><b>In queue</b>#151 to #155 prompts (Batch Q) ready; audios #146 to #150</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 34, 13 Nov 22:51 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 104, 16 Nov 06:35 PKT</div>
  </div>
 </section>
 
@@ -113,28 +113,28 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMeem"></i><span id="tMeem">Checking</span></div>
   <div id="meem-state">
-   <div class="row"><b>Doing now</b>#127 audio and video published; #133 video handoff received (6:42)</div>
-   <div class="row"><b>Last completed</b>#127 audio (Urdu 15:19) and video (EN 7:03) published; #133 video handed over and queued</div>
-   <div class="row"><b>Up next</b>#128 onward (oldest first); #133 video download, package and upload in queue order</div>
-   <div class="row"><b>In queue</b>Audios #128 to #147; videos #128 to #133</div>
+   <div class="row"><b>Doing now</b>Downstream HELD per owner stop order (15 Nov 00:05) — no download/package/upload until lifted</div>
+   <div class="row"><b>Last completed</b>#131 Video published (Log 1064); #132 Audio published</div>
+   <div class="row"><b>Up next</b>Held — resumes only on the owner's word</div>
+   <div class="row"><b>In queue</b>Audios #137 to #150; videos #132, #134 to #149 (held)</div>
   </div>
-  <div class="row"><b>Posts waiting for QA</b>#127 video post (U12) and corrected Urdu #127 audio post (U14), arrived 23:01 to 23:02 PKT</div>
-  <div class="src">Source: GitHub uploader.md, snapshot rev 25, 13 Nov 23:02 PKT</div>
+  <div class="row"><b>Posts waiting for QA</b>None — last post U31 (#131 Video) delivered and closed</div>
+  <div class="src">Source: GitHub uploader.md, snapshot rev 70, 16 Nov 04:59 PKT</div>
  </div>
 </section>
 
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
-  <hr><div class="row"><b>NotebookLM</b>#133 video submitted. Nothing is blocked.</div>
-  <div class="src">Usage figures are from the 13 Nov 23:15 PKT snapshot.</div></div>
+  <hr><div class="row"><b>NotebookLM</b>#150 Slide + Infographic done. Video probe at 08:05.</div>
+  <div class="src">Usage figures are from the 16 Nov 06:35 PKT snapshot. Muse live; Meem last reported 86% on 15 Nov.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
  <div class="cb"><ul class="feed" id="feed">
-  <li>#133 video complete, all 4 formats<time>Muse, 22:44 PKT</time></li>
-  <li>#133 video submitted to NotebookLM<time>22:12 PKT</time></li>
-  <li>#127 video post and corrected audio post arrived for QA<time>Meem, 23:01 PKT</time></li>
-  <li>#127 audio and video published<time>Meem</time></li></ul>
+  <li>#150 Infographic verified complete<time>Muse, 05:39 PKT</time></li>
+  <li>#150 Slide verified complete<time>Muse, 04:58 PKT</time></li>
+  <li>#149 ALL DONE<time>Muse, 04:28 PKT</time></li>
+  <li>#148 ALL DONE<time>Muse, 03:31 PKT</time></li></ul>
   <div class="src" id="feedsrc">Snapshot. Shows the latest GitHub commits when the repository is readable.</div></div>
 </section>
 
@@ -206,9 +206,9 @@ $("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("
 applyLay();
 
 /* agent health + tokens + alerts */
-var SEEN={muse:new Date("2026-11-13T22:01:00+05:00"),meem:new Date("2026-11-13T23:02:00+05:00")};
-var ASOF=new Date("2026-11-13T23:15:00+05:00");
-var TOK=[{n:"Muse",pct:4,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:100,x:"Add-on: 14% used, 859M left",reset:"2026-11-14T00:29:00+05:00"}];
+var SEEN={muse:new Date("2026-11-16T06:00:00+05:00"),meem:new Date("2026-11-16T04:59:00+05:00")};
+var ASOF=new Date("2026-11-16T06:35:00+05:00");
+var TOK=[{n:"Muse",pct:41,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-20T04:40:00+05:00"},{n:"Meem",pct:86,x:"Add-on: last reported 14% used, 859M left (13 Nov)",reset:"2026-11-21T00:29:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
