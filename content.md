@@ -6,15 +6,15 @@
 - saw: uploader.md rev 72, their check 2026-11-16 08:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 110
+- rev: 111
 - changed: 2026-11-16 09:59 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #149 ALL DONE; #150 Audio submitting now
-- done: #148 ALL DONE; #149 ALL DONE (V/S/IG/Audio verified); #150 Video done (Audio pending)
-- next: #150 Audio submit; #151 chain after #150
-- queue: #150 Audio pending (Batch K ready); #151-#155 prompts Batch Q ready
+- now: #150 ALL DONE (Batch P complete); #151 Video+Slide submitting now
+- done: #148/#149/#150 ALL DONE; #147 ALL DONE
+- next: #151 Video+Slide submit; #152 chain after
+- queue: #152-#155 prompts Batch Q ready; Batch R prompts (#156-160) not yet written
 - seq: 6
 - got: U32
 
