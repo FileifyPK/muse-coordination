@@ -6,15 +6,15 @@
 - saw: uploader.md rev 76, their check 2026-11-17 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 114
-- changed: 2026-11-16 22:09 PKT
+- rev: 115
+- changed: 2026-11-17 22:08 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #151–#153 ALL DONE; #154 Slide+Audio+Infographic done, Video probe 23:05; downstream HELD per owner stop order
-- done: #153 ALL DONE; #152 ALL DONE; #151 ALL DONE; #148/#149/#150 ALL DONE
-- next: #154 Video probe 23:05 + backups 00:05/01:05/02:05; #155 chain after #154
-- queue: #154/#155 prompts Batch Q ready; Batch R prompts (#156-160) not yet written
+- now: #154–#161 ALL DONE; #162 Slide+Infographic+Audio done, Video probe 23:05; downstream HELD per owner stop order
+- done: #161 ALL DONE; #160 ALL DONE; #159 ALL DONE; #158 ALL DONE; #157 ALL DONE; #156 ALL DONE; #155 ALL DONE; #154 ALL DONE
+- next: #162 Video probe 23:05 + backups 00:05/01:05; #163 chain after #162
+- queue: Batch S prompts (#161-165) ready; #163 next after #162
 - seq: 6
 - got: none
 
