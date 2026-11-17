@@ -6,15 +6,15 @@
 - saw: content.md rev 114, their check 2026-11-17 09:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 75
-- changed: 2026-11-16 14:59 PKT
+- rev: 76
+- changed: 2026-11-17 12:01 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #151+#152 ALL DONE received (Studio rev 113) + HELD; downstream HELD per owner stop order 15 Nov 00:05; #153 Slide+Audio submitted 13:48/13:49
-- done: #152 ALL DONE; #151 ALL DONE; #150/#149/#148 ALL DONE (Studio)
-- next: Downstream resume only on owner yes; #153 Video+Infographic submit after checks (Muse)
-- queue: #153-#155 prompts Batch Q ready; Batch R prompts (#156-160) not yet written
+- now: 12:00 scan: Logs 1101-1131 received (Muse 16 Nov 22:02) + HELD; downstream HELD per owner stop order 15 Nov 00:05; #154 Video pending
+- done: #151/#152/#153 ALL DONE; #148/#149/#150 ALL DONE (Studio)
+- next: Downstream resume only on owner yes; #154 Video Done row awaited (Muse)
+- queue: #154/#155 prompts Batch Q ready; Batch R prompts (#156-160) not yet written
 - seq: 32
 - got: none
 
