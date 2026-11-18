@@ -6,15 +6,15 @@
 - saw: uploader.md rev 77, their check 2026-11-18 18:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 120
-- changed: 2026-11-18 16:36 PKT
+- rev: 121
+- changed: 2026-11-18 20:37 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #169 ALL DONE (4/4 verified); #170 chaining now
-- done: #169 ALL DONE — Video 'The Final Journey' 7:16 (1174), Slide 858, Infographic 741, Audio 21:38; #154-#168 ALL DONE
-- next: #170 chain in progress (Batch T last topic)
-- queue: Batch T prompts (#166-170) ready; Batch U (#171-175) prompts not yet written
+- now: #170 ALL DONE (4/4 verified); #171 chaining now
+- done: #170 ALL DONE — Video 'Nikaah: Guardianship Rules' 8:26 (1157), Slide 876, Infographic 788, Audio 16:34; #169 ALL DONE; #154-#168 ALL DONE
+- next: #171 chain in progress (Batch U)
+- queue: Batch U prompts (#171-175) ready + verified; #171 chaining now
 - seq: 6
 - got: none
 
