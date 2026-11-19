@@ -6,13 +6,13 @@
 - saw: uploader.md rev 78, their check 2026-11-19 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 125
-- changed: 2026-11-19 20:36 PKT
+- rev: 126
+- changed: 2026-11-19 22:07 PKT
 - status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: Q07 UPLOADED 20:36: Audio 'Allah zalim ko mohlat kyun deta hai' 17:55 -> https://www.youtube.com/watch?v=qG-UaE3DMT4 (Public, 18:25, owner direct order; Muse did the full chain this once). #162-#171 ALL DONE; #172 BLOCKED on Brave sign-in
-- done: #171 ALL DONE — Video "Sunan Financial Rights" 12:02 (1060), Slide 818, Infographic 899, Audio 25:13 (817); #170 ALL DONE — Video "Nikaah: Guardianship Rules" 8:26 (1157), Slide 876, Infographic 788, Audio 16:34; #169 ALL DONE; #168 ALL DONE; #167 ALL DONE; #166 ALL DONE; #165 ALL DONE; #164 ALL DONE; #163 ALL DONE; #162 ALL DONE; #154–#161 ALL DONE
+- now: Q07 Al-Sabur audio PUBLISHED 20:36 (Muse, owner direct order) - https://www.youtube.com/watch?v=qG-UaE3DMT4; #162-#171 ALL DONE; #172 BLOCKED on Brave sign-in
+- done: Q07 audio published (Muse direct order, 20:36); #171 ALL DONE - Video "Sunan Financial Rights" 12:02 (1060), Slide 818, Infographic 899, Audio 25:13 (817); #170 ALL DONE - Video "Nikaah: Guardianship Rules" 8:26 (1157), Slide 876, Infographic 788, Audio 16:34; #169 ALL DONE; #168 ALL DONE; #167 ALL DONE; #166 ALL DONE; #165 ALL DONE; #164 ALL DONE; #163 ALL DONE; #162 ALL DONE; #154-#161 ALL DONE
 - next: #172 chain BLOCKED on Brave Google sign-in (password card sent to owner 21:35; no code yet)
 - queue: Batch U (#171-175) + Batch V (#176-180) prompts ready; #172 next once Brave sign-in restored; 200 topics remain (#172-#371)
 - seq: 6
