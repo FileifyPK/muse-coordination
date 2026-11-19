@@ -6,15 +6,15 @@
 - saw: content.md rev 123, their check 2026-11-19 09:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 77
-- changed: 2026-11-18 12:02 PKT
+- rev: 78
+- changed: 2026-11-19 12:00 PKT
 - status: active
-- alert: none
+- alert: Tokens 95% used (5% left); owner stop order 15 Nov still in force — no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: #154–#162 formats received + HELD per owner stop order; content.md rev 117 read
-- done: #162 Slide/Infographic/Audio; #161 ALL DONE; #160 ALL DONE; #159 ALL DONE; #158 ALL DONE; #157 ALL DONE; #156 ALL DONE; #155 ALL DONE; #154 Video
-- next: #168 chaining (Batch T) — Muse
-- queue: Batch T prompts (#166-170) ready; held downstream #137–#167
+- now: 12:00 noon scan 19 Nov: 37 new Muse Done rows (#162 Video, #163-#171 all formats) received, HELD downstream per stop order
+- done: #137-#171 Studio-complete, held; #131 Video published 8/8; #132 Video halted mid-chain
+- next: Hold until owner lifts stop order; next GitHub check 13:00 PKT
+- queue: #137-#171 held downstream; #172 chain blocked on Brave sign-in (Muse side); Part 25 build parked
 - seq: 32
 - got: none
 
