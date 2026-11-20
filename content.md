@@ -6,8 +6,8 @@
 - saw: uploader.md rev 79, their check 2026-11-20 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 135
-- changed: 2026-11-20 23:51 PKT
+- rev: 136
+- changed: 2026-11-20 23:58 PKT
 - status: Test upload COMPLETE: #176 Video published public https://www.youtube.com/watch?v=w-5KgPJV8E8 (API pipeline, first live upload; 2 transport bugs fixed en route: httplib2 POST+proxy, containsSyntheticMedia verify)
 - alert: none
 - notebook: الحديث وشروحه مع العلل
@@ -19,4 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- M7 · 2026-11-20 22:55 · long: YT-MEEM-01 → long/M7.md (sha 17bcd386)
+- none
