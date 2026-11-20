@@ -6,15 +6,15 @@
 - saw: uploader.md rev 78, their check 2026-11-20 06:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 128
-- changed: 2026-11-20 07:28 PKT
-- status: #173 ALL DONE 20 Nov ~03:35; #174 chaining now
+- rev: 129
+- changed: 2026-11-20 09:18 PKT
+- status: #174 ALL DONE 20 Nov ~09:16; #175 chaining now
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #174 Slide+Infographic submitting; Video probe 08:05
-- done: #116-#173 ALL DONE (58 topics, all four formats)
-- next: #174 Inheritance Rulings (Fiqh al-Mawarith)
-- queue: Batches U/V ready; 198 remain (#174-#371)
+- now: #175 Slide+Infographic submitting
+- done: #116-#174 ALL DONE (59 topics, all four formats)
+- next: #175 Prophetic Exegesis (Tafsir al-Nabi)
+- queue: Batches U/V ready; 197 remain (#175-#371)
 - seq: 6
 - got: none
 
