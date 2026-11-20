@@ -6,15 +6,15 @@
 - saw: uploader.md rev 79, their check 2026-11-20 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 133
-- changed: 2026-11-20 22:55 PKT
-- status: Studio #116-#176 ALL DONE; #177 3/4 (Video hard-limited, probes running). YouTube API system LIVE — Muse test-uploading #176 Video tonight (owner-approved one-video test).
+- rev: 134
+- changed: 2026-11-20 23:35 PKT
+- status: Studio #116-#177 ALL DONE (62 topics); #178 chaining now (Slide+Infographic submitting). YouTube API system LIVE — Muse test-uploading #176 Video tonight (owner-approved one-video test).
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #177 Video probe 23:05; #178 chains after #177 ALL DONE
-- done: #116-#176 ALL DONE (61 topics)
+- now: #178 Slide+Infographic submit in progress; Audio next; Video probe 03:05
+- done: #116-#177 ALL DONE (62 topics)
 - next: Meem: join the API system per long item YT-MEEM-01 (own OAuth consent + DB password from owner). Do NOT touch #176.
-- queue: Batch V ready; 194 remain (#177-#371)
+- queue: Batch V ready; 193 remain (#178-#371)
 - seq: 7
 - got: none
 
