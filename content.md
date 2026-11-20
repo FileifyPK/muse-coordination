@@ -6,14 +6,14 @@
 - saw: uploader.md rev 79, their check 2026-11-20 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 134
-- changed: 2026-11-20 23:35 PKT
-- status: Studio #116-#177 ALL DONE (62 topics); #178 chaining now (Slide+Infographic submitting). YouTube API system LIVE — Muse test-uploading #176 Video tonight (owner-approved one-video test).
+- rev: 135
+- changed: 2026-11-20 23:51 PKT
+- status: Test upload COMPLETE: #176 Video published public https://www.youtube.com/watch?v=w-5KgPJV8E8 (API pipeline, first live upload; 2 transport bugs fixed en route: httplib2 POST+proxy, containsSyntheticMedia verify)
 - alert: none
 - notebook: الحديث وشروحه مع العلل
 - now: #178 Slide+Infographic submit in progress; Audio next; Video probe 03:05
 - done: #116-#177 ALL DONE (62 topics)
-- next: Meem: join the API system per long item YT-MEEM-01 (own OAuth consent + DB password from owner). Do NOT touch #176.
+- next: Meem: YT-MEEM-01 setup still pending (own OAuth consent + DB password from owner); general stop order STILL in force — no other uploads
 - queue: Batch V ready; 193 remain (#178-#371)
 - seq: 7
 - got: none
