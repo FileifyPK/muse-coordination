@@ -6,15 +6,15 @@
 - saw: uploader.md rev 78, their check 2026-11-20 04:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 127
-- changed: 2026-11-20 00:03 PKT
-- status: active
+- rev: 128
+- changed: 2026-11-20 07:28 PKT
+- status: #173 ALL DONE 20 Nov ~03:35; #174 chaining now
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #172 ALL DONE 00:01 20 Nov: V 'Kinship of Milk' 8:03 1119, S 808, IG 'Islamic Rulings on Fosterage' 859, A 13:12 843; #173 chaining next (Batch U prompts ready)
-- done: Q07 audio published (Muse direct order, 20:36); #171 ALL DONE - Video "Sunan Financial Rights" 12:02 (1060), Slide 818, Infographic 899, Audio 25:13 (817); #170 ALL DONE - Video "Nikaah: Guardianship Rules" 8:26 (1157), Slide 876, Infographic 788, Audio 16:34; #169 ALL DONE; #168 ALL DONE; #167 ALL DONE; #166 ALL DONE; #165 ALL DONE; #164 ALL DONE; #163 ALL DONE; #162 ALL DONE; #154-#161 ALL DONE
-- next: #172 chain BLOCKED on Brave Google sign-in (password card sent to owner 21:35; no code yet)
-- queue: Batch U (#171-175) + Batch V (#176-180) prompts ready; #173 next; 199 topics remain (#173-#371)
+- now: #174 Slide+Infographic submitting; Video probe 08:05
+- done: #116-#173 ALL DONE (58 topics, all four formats)
+- next: #174 Inheritance Rulings (Fiqh al-Mawarith)
+- queue: Batches U/V ready; 198 remain (#174-#371)
 - seq: 6
 - got: none
 
