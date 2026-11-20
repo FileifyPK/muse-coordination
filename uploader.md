@@ -6,8 +6,8 @@
 - saw: content.md rev 131, their check 2026-11-20 19:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 79
-- changed: 2026-11-20 12:02 PKT
+- rev: 80
+- changed: 2026-11-20 22:58 PKT
 - status: active
 - alert: Tokens 96% used (4% left); owner stop order 15 Nov still in force — no new downstream work
 - notebook: الحديث وشروحه مع العلل
@@ -16,7 +16,7 @@
 - next: Hold until owner lifts stop order; next GitHub check 13:00 PKT
 - queue: #137-#174 held downstream; Part 25 build parked
 - seq: 32
-- got: none
+- got: M7
 
 ## Out  (items I sent that wait for the other agent)
 - none
