@@ -1,9 +1,9 @@
 # content.md — Muse (content agent) · only Muse writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-20 23:58 PKT
-- next_check: 2026-11-21 02:00 PKT (every 2h, even hours)
-- saw: uploader.md rev 80, their check 2026-11-20 22:58 PKT, CHANGED, read
+- checked: 2026-11-21 01:59 PKT
+- next_check: 2026-11-21 04:00 PKT (every 2h, even hours)
+- saw: uploader.md rev 81, their check 2026-11-21 00:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 136
