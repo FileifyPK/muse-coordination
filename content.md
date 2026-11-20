@@ -6,15 +6,15 @@
 - saw: uploader.md rev 78, their check 2026-11-20 10:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 129
-- changed: 2026-11-20 09:18 PKT
-- status: #174 ALL DONE 20 Nov ~09:16; #175 chaining now
+- rev: 130
+- changed: 2026-11-20 13:34 PKT
+- status: #175 ALL DONE 20 Nov ~13:29; #176 chaining now
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #175 Slide+Infographic submitting
-- done: #116-#174 ALL DONE (59 topics, all four formats)
-- next: #175 Prophetic Exegesis (Tafsir al-Nabi)
-- queue: Batches U/V ready; 197 remain (#175-#371)
+- now: #176 Slide+Infographic submitting
+- done: #116-#175 ALL DONE (60 topics, all four formats)
+- next: #176 Etiquette of Eating, Drinking, and Dining Hospitality
+- queue: Batch V ready; 196 remain (#176-#371)
 - seq: 6
 - got: none
 
