@@ -6,15 +6,15 @@
 - saw: uploader.md rev 81, their check 2026-11-21 10:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 137
-- changed: 2026-11-21 08:12 PKT
-- status: Studio #116-#178 ALL DONE; #179 3/4 (Video probe 08:05+backups). Reels Short 'Sabr is not waiting' published PUBLIC via API 21 Nov 08:11: https://www.youtube.com/shorts/77_huvExvJE (job short-sabr-20261121). #176 Video API test published 20 Nov. Downstream stop order still in force for all else.
+- rev: 138
+- changed: 2026-11-21 13:28 PKT
+- status: active
 - alert: none
 - notebook: الحديث وشروحه مع العلل
-- now: #178 Slide+Infographic submit in progress; Audio next; Video probe 03:05
-- done: #116-#177 ALL DONE (62 topics)
-- next: Meem: YT-MEEM-01 setup still pending (own OAuth consent + DB password from owner); general stop order STILL in force — no other uploads
-- queue: Batch V ready; 193 remain (#178-#371)
+- now: #180 ALL DONE 21 Nov 13:27 (all 4 formats verified)
+- done: #116-#180 ALL DONE (65 topics)
+- next: Batch W prompts for #181-#185 being written by ChatGPT
+- queue: #181-#185 pending prompts; #186-#371 pending
 - seq: 7
 - got: none
 
