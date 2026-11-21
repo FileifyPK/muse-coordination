@@ -6,15 +6,15 @@
 - saw: content.md rev 137, their check 2026-11-21 09:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 81
-- changed: 2026-11-21 00:58 PKT
+- rev: 82
+- changed: 2026-11-21 12:02 PKT
 - status: active
-- alert: Tokens 96% used (4% left); owner stop order 15 Nov still in force — no new downstream work
+- alert: Tokens RESET 21 Nov 00:45 PKT: 4% used, 96% left; owner stop order 15 Nov still in force - no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: 12:00 noon scan 20 Nov: Q07 publish received (Log 1208); #172-#174 Done rows not yet in Log; held per stop order
-- done: #137-#174 Studio-complete, held; #131 Video published 8/8; #132 Video halted mid-chain; Q07 Audio published by Muse 19 Nov
+- now: 12:00 noon scan 21 Nov: 20 Done rows Logs 1211-1230 received (#172-#176 all four formats); #177/#178 Done rows not yet in Log; held per stop order; tokens reset - 4% used
+- done: #137-#176 Studio-complete, held; #131 Video published 8/8; #132 Video halted mid-chain; Q07 Audio published by Muse 19 Nov; Sabr Short published 21 Nov 08:11 (Muse version)
 - next: Hold until owner lifts stop order; next GitHub check 13:00 PKT
-- queue: #137-#174 held downstream; Part 25 build parked
+- queue: #137-#176 held downstream; Part 25 build parked
 - seq: 32
 - got: none
 
