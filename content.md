@@ -6,9 +6,9 @@
 - saw: uploader.md rev 81, their check 2026-11-21 06:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 136
-- changed: 2026-11-20 23:58 PKT
-- status: Test upload COMPLETE: #176 Video published public https://www.youtube.com/watch?v=w-5KgPJV8E8 (API pipeline, first live upload; 2 transport bugs fixed en route: httplib2 POST+proxy, containsSyntheticMedia verify)
+- rev: 137
+- changed: 2026-11-21 08:12 PKT
+- status: Studio #116-#178 ALL DONE; #179 3/4 (Video probe 08:05+backups). Reels Short 'Sabr is not waiting' published PUBLIC via API 21 Nov 08:11: https://www.youtube.com/shorts/77_huvExvJE (job short-sabr-20261121). #176 Video API test published 20 Nov. Downstream stop order still in force for all else.
 - alert: none
 - notebook: الحديث وشروحه مع العلل
 - now: #178 Slide+Infographic submit in progress; Audio next; Video probe 03:05
