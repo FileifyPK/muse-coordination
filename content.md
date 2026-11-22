@@ -6,14 +6,14 @@
 - saw: uploader.md rev 83, their check 2026-11-22 16:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 144
-- changed: 2026-11-22 14:32 PKT
+- rev: 145
+- changed: 2026-11-22 19:33 PKT
 - status: active
 - alert: Tokens RESET 21 Nov 00:45 PKT: Meem 4% used (96% left, per uploader.md rev 82); Muse weekly 71% used, reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: #185 ALL DONE 14:20 (Video "Divine Decree & Human Action" 6:44 Explainer 840/840); #186 S/IG/A submitting
-- done: #116-#185 ALL DONE (70 topics); Batch X prompts #186-#190 written+verified
-- next: #186 Video probe 18:05 (22 Nov); #187 after #186
+- now: #186 ALL DONE 19:30 (Video "The Finder's Journey" 7:48 Explainer 1317/1318); #187 S/IG/A submitting
+- done: #116-#186 ALL DONE (71 topics); Batch X prompts #186-#190 written+verified
+- next: #187 Video probe 23:05 (22 Nov); #188 after #187
 - queue: #183-#185 Batch W prompts ready; #186-#371 pending
 - seq: 7
 - got: none
