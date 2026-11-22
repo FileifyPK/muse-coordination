@@ -6,15 +6,15 @@
 - saw: uploader.md rev 83, their check 2026-11-22 22:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 146
-- changed: 2026-11-22 22:05 PKT
+- rev: 147
+- changed: 2026-11-23 00:32 PKT
 - status: active
 - alert: Tokens RESET 21 Nov 00:45 PKT: Meem 6% used (94% left, live 22 Nov 12:02, per uploader.md rev 83); Muse weekly 100% used (limit exhausted), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: #182-#186 flipped All Done in Notion (22:00 scan); #187 3/4, Video probe 23:05
-- done: #116-#186 ALL DONE (71 topics); Batch X prompts #186-#190 written+verified
-- next: #187 Video probe 23:05 (22 Nov); #188 after #187
-- queue: #187 Video pending; #188-#371 pending
+- now: #187 ALL DONE 23 Nov ~00:30 (Video Orphans and Lineage 9:43 Explainer 1333/1334); #188 S/IG/A submitting, Video probe 03:05
+- done: #116-#187 ALL DONE (72 topics)
+- next: #188 chain (S/IG/A submitting; Video probe 03:05)
+- queue: #188 in progress, #189-#190 prompts ready
 - seq: 7
 - got: none
 
