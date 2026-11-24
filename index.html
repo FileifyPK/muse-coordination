@@ -100,12 +100,12 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMuse"></i><span id="tMuse">Checking</span></div>
   <div id="muse-state">
-   <div class="row"><b>Doing now</b>#187–#193 ALL DONE (flipped in Notion 22:00 scan); #194 Slide generating, Video HARD LIMIT — probes 23:05/00:05/01:05/02:05</div>
-   <div class="row"><b>Last completed</b>#193 ALL DONE (23 Nov 21:56); #192 ALL DONE (23 Nov 20:33); #191 ALL DONE (23 Nov 16:19)</div>
-   <div class="row"><b>Up next</b>#194 Video probe 23:05; then #195 (Batch Y)</div>
-   <div class="row"><b>In queue</b>Batch Y prompts (#191–#195) ready + verified; 177 topics remain (#194–#371)</div>
+   <div class="row"><b>Doing now</b>#194–#196 ALL DONE (flipped in Notion 22:00 scan); #197 HELD — owner decision pending (long vs short prompts, asked 13:30)</div>
+   <div class="row"><b>Last completed</b>#196 ALL DONE (24 Nov 11:40); #195 ALL DONE (24 Nov 06:41); #194 ALL DONE (24 Nov 01:41)</div>
+   <div class="row"><b>Up next</b>#197 waits on owner's long-vs-short call</div>
+   <div class="row"><b>In queue</b>Batch Z prompts (#197–#200) written short, awaiting review; 175 topics remain (#197–#371)</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 152, 23 Nov 22:10 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 153, 24 Nov 22:10 PKT</div>
  </div>
 </section>
 
@@ -113,28 +113,28 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMeem"></i><span id="tMeem">Checking</span></div>
   <div id="meem-state">
-   <div class="row"><b>Doing now</b>12:00 noon scan received; #182–#186 Done rows received (Logs 1255–1274); #187–#189 Done rows pending; HELD downstream per owner stop order 15 Nov 00:05</div>
+   <div class="row"><b>Doing now</b>12:00 noon scan received; #187–#193 Done rows received (Logs 1277–1304); #194–#196 Done rows pending; HELD downstream per owner stop order 15 Nov 00:05</div>
    <div class="row"><b>Last completed</b>#131 Video published 8/8; Q07 publish received (Log 1208)</div>
    <div class="row"><b>Up next</b>Hold until owner lifts stop order; next GitHub check 23:00 PKT</div>
-   <div class="row"><b>In queue</b>#137–#189 held downstream; Part 25 build parked</div>
+   <div class="row"><b>In queue</b>#137–#196 held downstream; Part 25 build parked</div>
   </div>
   <div class="row"><b>Posts waiting for QA</b>None — last post U31 (#131 Video) delivered and closed</div>
-  <div class="src">Source: GitHub uploader.md, snapshot rev 84, 23 Nov 20:58 PKT</div>
+  <div class="src">Source: GitHub uploader.md, snapshot rev 85, 24 Nov 20:58 PKT</div>
  </div>
 </section>
 
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
-  <hr><div class="row"><b>NotebookLM</b>#187–#193 ALL DONE (78 topics). #194 Slide generating; Video HARD LIMIT — probe 23:05.</div>
-  <div class="src">Usage figures are from the 23 Nov 22:10 PKT snapshot. Muse live 22:10; Meem fresh check 20:58.</div></div>
+  <hr><div class="row"><b>NotebookLM</b>#194–#196 ALL DONE (81 topics). #197 HELD — owner decision on long vs short prompts pending.</div>
+  <div class="src">Usage figures are from the 24 Nov 22:10 PKT snapshot. Muse live 22:10; Meem fresh check 20:58.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
  <div class="cb"><ul class="feed" id="feed">
-  <li>#193 ALL DONE — all 4 formats verified<time>Muse, 23 Nov 21:56 PKT</time></li>
-  <li>#192 ALL DONE — all 4 formats verified<time>Muse, 23 Nov 20:33 PKT</time></li>
-  <li>#191 ALL DONE — all 4 formats verified<time>Muse, 23 Nov 16:19 PKT</time></li>
-  <li>#190 ALL DONE — all 4 formats verified<time>Muse, 23 Nov 15:30 PKT</time></li></ul>
+  <li>#196 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 11:40 PKT</time></li>
+  <li>#195 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 06:41 PKT</time></li>
+  <li>#194 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 01:41 PKT</time></li>
+  <li>#193 ALL DONE — all 4 formats verified<time>Muse, 23 Nov 21:56 PKT</time></li></ul>
   <div class="src" id="feedsrc">Snapshot. Shows the latest GitHub commits when the repository is readable.</div></div>
 </section>
 
@@ -206,9 +206,9 @@ $("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("
 applyLay();
 
 /* agent health + tokens + alerts */
-var SEEN={muse:new Date("2026-11-23T22:10:00+05:00"),meem:new Date("2026-11-23T20:58:00+05:00")};
-var ASOF=new Date("2026-11-23T22:10:00+05:00");
-var TOK=[{n:"Muse",pct:100,x:"Add-on: 2% used, 7.8B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:16,x:"84% of weekly allowance left (live 23 Nov 12:00)",reset:"2026-11-21T00:45:00+05:00"}];
+var SEEN={muse:new Date("2026-11-24T22:10:00+05:00"),meem:new Date("2026-11-24T20:58:00+05:00")};
+var ASOF=new Date("2026-11-24T22:10:00+05:00");
+var TOK=[{n:"Muse",pct:100,x:"Add-on: 3% used, 7.7B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:25,x:"75% of weekly allowance left (live 24 Nov 12:00)",reset:"2026-11-21T00:45:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
