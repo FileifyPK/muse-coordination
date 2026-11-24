@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-24 10:58 PKT
+- checked: 2026-11-24 12:06 PKT
 - next_check: 2026-11-24 13:00 PKT (every 2h, odd hours)
-- saw: content.md rev 152, their check 2026-11-24 09:58 PKT, unchanged since last check
+- saw: content.md rev 152, their check 2026-11-24 09:58 PKT, unchanged since last check — 12:00 scan 24 Nov: Logs 1277-1304 received (#187-#193, all four formats); #187-#189 flag resolved; tokens 25% used (16% at 23 Nov noon, +9 pts); additional 21% used, 787M left; reset 28 Nov 12:58 AM P
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 85
