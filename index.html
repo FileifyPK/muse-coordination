@@ -105,7 +105,7 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
    <div class="row"><b>Up next</b>#197 waits on owner's long-vs-short call</div>
    <div class="row"><b>In queue</b>Batch Z prompts (#197–#200) written short, awaiting review; 175 topics remain (#197–#371)</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 153, 24 Nov 22:10 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 154, 25 Nov 22:01 PKT</div>
  </div>
 </section>
 
@@ -113,20 +113,20 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMeem"></i><span id="tMeem">Checking</span></div>
   <div id="meem-state">
-   <div class="row"><b>Doing now</b>12:00 noon scan received; #187–#193 Done rows received (Logs 1277–1304); #194–#196 Done rows pending; HELD downstream per owner stop order 15 Nov 00:05</div>
+   <div class="row"><b>Doing now</b>12:00 noon scan 25 Nov: 12 Done rows Logs 1307–1318 received (#194–#196 all four formats); #197 HELD on owner long-vs-short call; tokens 27% used</div>
    <div class="row"><b>Last completed</b>#131 Video published 8/8; Q07 publish received (Log 1208)</div>
    <div class="row"><b>Up next</b>Hold until owner lifts stop order; next GitHub check 23:00 PKT</div>
    <div class="row"><b>In queue</b>#137–#196 held downstream; Part 25 build parked</div>
   </div>
   <div class="row"><b>Posts waiting for QA</b>None — last post U31 (#131 Video) delivered and closed</div>
-  <div class="src">Source: GitHub uploader.md, snapshot rev 85, 24 Nov 20:58 PKT</div>
+  <div class="src">Source: GitHub uploader.md, snapshot rev 86, 25 Nov 20:58 PKT</div>
  </div>
 </section>
 
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
   <hr><div class="row"><b>NotebookLM</b>#194–#196 ALL DONE (81 topics). #197 HELD — owner decision on long vs short prompts pending.</div>
-  <div class="src">Usage figures are from the 24 Nov 22:10 PKT snapshot. Muse live 22:10; Meem fresh check 20:58.</div></div>
+  <div class="src">Usage figures are from the 25 Nov 22:01 PKT snapshot. Muse live 22:01; Meem fresh check 20:58.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
@@ -206,9 +206,9 @@ $("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("
 applyLay();
 
 /* agent health + tokens + alerts */
-var SEEN={muse:new Date("2026-11-24T22:10:00+05:00"),meem:new Date("2026-11-24T20:58:00+05:00")};
-var ASOF=new Date("2026-11-24T22:10:00+05:00");
-var TOK=[{n:"Muse",pct:100,x:"Add-on: 3% used, 7.7B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:25,x:"75% of weekly allowance left (live 24 Nov 12:00)",reset:"2026-11-21T00:45:00+05:00"}];
+var SEEN={muse:new Date("2026-11-25T22:01:00+05:00"),meem:new Date("2026-11-25T20:58:00+05:00")};
+var ASOF=new Date("2026-11-25T22:01:00+05:00");
+var TOK=[{n:"Muse",pct:100,x:"Add-on: 3% used, 7.7B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:27,x:"73% of weekly allowance left (live 25 Nov 12:02)",reset:"2026-11-21T00:45:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
