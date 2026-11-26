@@ -6,7 +6,7 @@
 - saw: content.md rev 159, their check 2026-11-26 23:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 93
+- rev: 94
 - changed: 2026-11-27 02:58 PKT
 - status: active
 - alert: Tokens RESET 21 Nov 00:45 PKT: Meem 44% used (56% left, live 26 Nov 12:05, up from 27% on 25 Nov); Muse weekly 100% used (limit exhausted), additional 3% used (7.7B left), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
@@ -19,4 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- U35 · 2026-11-27 01:00 · long: Channel post Ākhirah V3 The Preemptive Audit (English, 1 min) → long/U35.md (sha c0c168ed)
+- none
