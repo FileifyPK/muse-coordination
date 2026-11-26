@@ -6,15 +6,15 @@
 - saw: uploader.md rev 87, their check 2026-11-26 16:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 154
-- changed: 2026-11-25 22:02 PKT
+- rev: 155
+- changed: 2026-11-26 19:59 PKT
 - status: active
-- alert: Tokens RESET 21 Nov 00:45 PKT: Meem 27% used (73% left, live 25 Nov 12:02, per uploader.md rev 86); Muse weekly 100% used (limit exhausted), additional 3% used (7.7B left), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
+- alert: Tokens RESET 21 Nov 00:45 PKT: Meem 44% used (56% left, live 26 Nov 12:05, up from 27% on 25 Nov); Muse weekly 100% used (limit exhausted), additional 3% used (7.7B left), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: 22:00 scan 25 Nov: PQ db unchanged (160 All Done, 341 rows); Meem noon scan confirmed #194-#196 Done rows (Logs 1307-1318); #197 HELD - owner decision pending (long vs short prompts, asked 13:30); Muse tokens unchanged
-- done: #116-#196 ALL DONE (81 topics)
-- next: #197 waits on owner long-vs-short call; then #198-#200 (Batch Z, short prompts written)
-- queue: #197-#371 pending (175 topics); #197 short prompts written, awaiting owner review
+- now: #197 decision CLOSED 26 Nov 19:45: owner answered SHORT; #197 chain started evening 26 Nov with SHORT prompts (V 558/S 503/IG 552/A 588); Qaaf = EXTRA work only per owner 26 Nov ~18:26, Meem unchanged
+- done: #116-#196 ALL DONE (81 topics); #197 chain started (SHORT prompts)
+- next: #197 chain in progress (SHORT prompts); then #198-#200
+- queue: #197-#371 pending (175 topics); #198-#200 short prompts written
 - seq: 7
 - got: none
 
