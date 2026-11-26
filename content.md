@@ -6,15 +6,15 @@
 - saw: uploader.md rev 88, their check 2026-11-26 20:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 155
-- changed: 2026-11-26 19:59 PKT
+- rev: 156
+- changed: 2026-11-26 22:03 PKT
 - status: active
 - alert: Tokens RESET 21 Nov 00:45 PKT: Meem 44% used (56% left, live 26 Nov 12:05, up from 27% on 25 Nov); Muse weekly 100% used (limit exhausted), additional 3% used (7.7B left), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
 - notebook: الحديث وشروحه مع العلل
-- now: #197 decision CLOSED 26 Nov 19:45: owner answered SHORT; #197 chain started evening 26 Nov with SHORT prompts (V 558/S 503/IG 552/A 588); Qaaf = EXTRA work only per owner 26 Nov ~18:26, Meem unchanged
-- done: #116-#196 ALL DONE (81 topics); #197 chain started (SHORT prompts)
-- next: #197 chain in progress (SHORT prompts); then #198-#200
-- queue: #197-#371 pending (175 topics); #198-#200 short prompts written
+- now: #197 ALL DONE 26 Nov (SHORT prompts, all 4 verified); #198 3/4 verified (Slide/Video/Infog), Audio check in flight; OWNER CORRECTION 26 Nov 21:57: Qaaf is the owner's OWN tool — he directs it himself, it does NOT wait for Muse's orders/approvals/queue jobs; stop-order scope for Qaaf's owner-directed uploads asked, awaiting his confirmation
+- done: #116-#197 ALL DONE (82 topics); #198 3/4 verified
+- next: #198 Audio verification, then #199 chain (SHORT prompts)
+- queue: #198-#371 pending (174 topics); #199-#200 short prompts written
 - seq: 7
 - got: none
 
