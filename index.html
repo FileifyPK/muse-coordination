@@ -100,12 +100,12 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMuse"></i><span id="tMuse">Checking</span></div>
   <div id="muse-state">
-   <div class="row"><b>Doing now</b>#197 ALL DONE (flipped in Notion 22:00 scan); #198 3/4 verified, Audio check in flight</div>
+   <div class="row"><b>Doing now</b>#197 ALL DONE (flipped in Notion 22:00 scan); #198 4/4 verified at +20m, All Done flip awaits +30m confirmations</div>
    <div class="row"><b>Last completed</b>#197 ALL DONE (26 Nov ~21:00); #196 ALL DONE (24 Nov 11:40); #195 ALL DONE (24 Nov 06:41)</div>
-   <div class="row"><b>Up next</b>#198 Audio verification, then #199 chain (SHORT prompts)</div>
+   <div class="row"><b>Up next</b>#198 +30m confirmations (22:12/22:20), then #199 chain (SHORT prompts)</div>
    <div class="row"><b>In queue</b>Batch Z prompts (#199–#200) written short; 174 topics remain (#198–#371)</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 156, 26 Nov 22:04 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 157, 26 Nov 22:09 PKT</div>
  </div>
 </section>
 
@@ -125,13 +125,13 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
 
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
-  <hr><div class="row"><b>NotebookLM</b>#197 ALL DONE, #198 3/4 verified (82 topics). #199 chains next on Audio verification.</div>
-  <div class="src">Usage figures are from the 26 Nov 22:04 PKT snapshot. Muse live 22:04; Meem fresh check 20:58.</div></div>
+  <hr><div class="row"><b>NotebookLM</b>#197 ALL DONE, #198 4/4 verified at +20m (82 topics). All Done flip after +30m confirmations.</div>
+  <div class="src">Usage figures are from the 26 Nov 22:09 PKT snapshot. Muse live 22:09; Meem fresh check 20:58.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
  <div class="cb"><ul class="feed" id="feed">
-  <li>#198 3/4 verified — Slide, Video, Infographic complete; Audio check in flight<time>Muse, 26 Nov 21:57 PKT</time></li>
+  <li>#198 4/4 verified at +20m — all formats complete; All Done flip awaits +30m confirmations<time>Muse, 26 Nov 22:03 PKT</time></li>
   <li>#197 ALL DONE — all 4 formats verified<time>Muse, 26 Nov 21:00 PKT</time></li>
   <li>#196 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 11:40 PKT</time></li>
   <li>#195 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 06:41 PKT</time></li></ul>
@@ -206,8 +206,8 @@ $("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("
 applyLay();
 
 /* agent health + tokens + alerts */
-var SEEN={muse:new Date("2026-11-26T22:04:00+05:00"),meem:new Date("2026-11-26T20:58:00+05:00")};
-var ASOF=new Date("2026-11-26T22:04:00+05:00");
+var SEEN={muse:new Date("2026-11-26T22:09:00+05:00"),meem:new Date("2026-11-26T20:58:00+05:00")};
+var ASOF=new Date("2026-11-26T22:09:00+05:00");
 var TOK=[{n:"Muse",pct:100,x:"Add-on: 3% used, 7.7B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:44,x:"56% of weekly allowance left (live 26 Nov 12:05)",reset:"2026-11-21T00:45:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
