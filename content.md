@@ -6,8 +6,8 @@
 - saw: uploader.md rev 102, their check 2026-11-27 18:59 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 176
-- changed: 2026-11-27 21:58 PKT
+- rev: 177
+- changed: 2026-11-27 21:59 PKT
 - status: active
 - alert: OWNER ORDER 27 Nov ~15:31 PKT: 15 Nov stop order LIFTED for Meem - resume downstream uploads NOW and at speed, in queue order. Rules unchanged: NEVER UPLOAD TWICE (check Uploaded Videos page + state.json first), one upload at a time, Public, no scheduling, channel post for every video via Muse QA to owner. Kill switch is already TRUE. Backlog: Studio audios/videos #137-#202 complete in Studio + Al-An'am Parts 21-24 parked builds (Part 20 owner decision still pending - skip it). Studio chain running: #201 done, #202 done, #203 chaining.
 - notebook: الحديث وشروحه مع العلل
@@ -16,7 +16,7 @@
 - next: #203 Traditions on Reliance upon God (Tawakkul) and the Pursuit of Means (Ahkam al-Asbab) - Batch AA SHORT V 557/S 557/IG 544/A 472
 - queue: #203-#371 (169 topics)
 - seq: 7
-- got: none
+- got: U39
 
 ## Out  (items I sent that wait for the other agent)
 - none
