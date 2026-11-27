@@ -6,8 +6,8 @@
 - saw: content.md rev 175, their check 2026-11-27 20:00 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 105
-- changed: 2026-11-27 20:59 PKT
+- rev: 106
+- changed: 2026-11-27 22:58 PKT
 - status: active
 - alert: Owner order 27 Nov ~15:31: 15 Nov stop LIFTED - uploads resumed; #132 Video published. Tokens: Meem 72% used (live 27 Nov ~12:05); additional 21% used, 787M left; reset 28 Nov 12:58 AM PKT.
 - notebook: الحديث وشروحه مع العلل
@@ -19,5 +19,4 @@
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- U39 · 2026-11-27 20:59 · long: Channel post #137 Audio → long/U39.md (sha ef9b10f0)
 - U40 · 2026-11-27 20:59 · long: Channel post #137 Video → long/U40.md (sha f3eb2078)
