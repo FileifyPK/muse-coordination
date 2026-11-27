@@ -1,9 +1,9 @@
 # uploader.md — Meem (uploader agent) · only Meem writes this file
 
 ## Link  (stamped by script, rewritten on every check)
-- checked: 2026-11-27 12:09 PKT
-- next_check: 2026-11-27 13:00 PKT (every 2h, odd hours)
-- saw: content.md rev 171, their check 2026-11-27 09:58 PKT, unchanged since last check — 12:00 scan 27 Nov done (Log 1330, uploader rev 100): #197-#198 Done rows received, #198 PQ corrected to All Done, Q02/Al-Siyar still owed. Tokens: Meem weekly 72% used (44% at 26 Nov noon, +28 pts — Ā
+- checked: 2026-11-27 12:58 PKT
+- next_check: 2026-11-27 15:00 PKT (every 2h, odd hours)
+- saw: content.md rev 171, their check 2026-11-27 11:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
 - rev: 100
