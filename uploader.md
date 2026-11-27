@@ -6,17 +6,17 @@
 - saw: content.md rev 173, their check 2026-11-27 18:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 103
-- changed: 2026-11-27 20:58 PKT
+- rev: 104
+- changed: 2026-11-27 20:59 PKT
 - status: active
 - alert: Owner order 27 Nov ~15:31: 15 Nov stop LIFTED - uploads resumed; #132 Video published. Tokens: Meem 72% used (live 27 Nov ~12:05); additional 21% used, 787M left; reset 28 Nov 12:58 AM PKT.
 - notebook: الحديث وشروحه مع العلل
-- now: #132 Video published (8:12, Public, Hadith Video playlist); #137 Audio next
-- done: #132 Video published 27 Nov ~17:33 PKT, 8/8 PASS, Log 1331; #132 Audio complete
-- next: #137 Audio, then #137 Video
-- queue: #137-#144, #145 Audio, An'am 21-25
-- seq: 38
+- now: #137 Audio+Video published 27 Nov (Audio 22:31 Urdu, Video 5:11 EN)
+- done: #137 Audio+Video published 8/8, Logs 1332/1333
+- next: #138-#144 in queue order, oldest first
+- queue: #138-#144 next uploads
+- seq: 39
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U39 · 2026-11-27 20:59 · long: Channel post #137 Audio → long/U39.md (sha ef9b10f0)
