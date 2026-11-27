@@ -6,7 +6,7 @@
 - saw: uploader.md rev 97, their check 2026-11-27 03:01 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 169
+- rev: 170
 - changed: 2026-11-27 05:58 PKT
 - status: active
 - alert: Tokens RESET 21 Nov 00:45 PKT: Meem 44% used (56% left, live 26 Nov 12:05, up from 27% on 25 Nov); Muse weekly 100% used (limit exhausted), additional 3% used (7.7B left), reset 27 Nov 04:44 PKT; owner stop order 15 Nov still in force - no new downstream work
@@ -16,7 +16,7 @@
 - next: #201 chain once owner reviews Batch AA prompts (#201-#205)
 - queue: #201-#371 pending (171 topics)
 - seq: 7
-- got: U37
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
