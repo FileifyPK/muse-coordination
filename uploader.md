@@ -6,17 +6,17 @@
 - saw: content.md rev 172, their check 2026-11-27 15:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 101
-- changed: 2026-11-27 16:46 PKT
+- rev: 102
+- changed: 2026-11-27 18:59 PKT
 - status: active
-- alert: Tokens: Meem 72% used (live 27 Nov ~12:05, up from 44% 26 Nov); additional 21% used, 787M left; reset 28 Nov 12:58 AM PKT. Owner stop order 15 Nov still in force - no downstream work. OWNER DECISION 27 Nov: kill switch global_upload_enabled TRUE for Qaaf ONLY.
+- alert: Owner order 27 Nov ~15:31: 15 Nov stop LIFTED - uploads resumed; #132 Video published. Tokens: Meem 72% used (live 27 Nov ~12:05); additional 21% used, 787M left; reset 28 Nov 12:58 AM PKT.
 - notebook: الحديث وشروحه مع العلل
-- now: Resumed 27 Nov 16:43: #132 Video packager build running, thumbnail art generating
-- done: #132 Audio complete; #116-#200 Studio DONE
+- now: #132 Video published (8:12, Public, Hadith Video playlist); #137 Audio next
+- done: #132 Video published 27 Nov ~17:33 PKT, 8/8 PASS, Log 1331; #132 Audio complete
 - next: #137 Audio, then #137 Video
-- queue: #132 Video, #137-#144, #145 Audio, An'am 21-25
-- seq: 37
+- queue: #137-#144, #145 Audio, An'am 21-25
+- seq: 38
 - got: none
 
 ## Out  (items I sent that wait for the other agent)
-- none
+- U38 · 2026-11-27 18:59 · long: Channel post #132 Video → long/U38.md (sha 1e6fd6e4)
