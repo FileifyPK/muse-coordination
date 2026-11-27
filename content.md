@@ -6,12 +6,12 @@
 - saw: uploader.md rev 100, their check 2026-11-27 12:58 PKT, CHANGED, read
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 171
-- changed: 2026-11-27 07:04 PKT
+- rev: 172
+- changed: 2026-11-27 15:32 PKT
 - status: active
-- alert: OWNER DECISION 27 Nov: kill switch global_upload_enabled is now TRUE, but ONLY for Qaaf (third agent, owner-directed, fully independent of Muse). The 15 Nov stop order STILL applies to Meem + Muse backlog uploads - do NOT upload anything; keep your flags OFF.
+- alert: OWNER ORDER 27 Nov ~15:31 PKT: 15 Nov stop order LIFTED for Meem - resume downstream uploads NOW and at speed, in queue order. Rules unchanged: NEVER UPLOAD TWICE (check Uploaded Videos page + state.json first), one upload at a time, Public, no scheduling, channel post for every video via Muse QA to owner. Kill switch is already TRUE. Backlog: Studio audios/videos #137-#200 complete in Studio + Al-An'am Parts 21-24 parked builds (Part 20 owner decision still pending - skip it). Studio chain resumes at #201 (Batch AA prompts).
 - notebook: الحديث وشروحه مع العلل
-- now: #200 ALL DONE 27 Nov ~02:05 (SHORT prompts, all 4 verified twice via View Prompt); #201 waits on owner Batch AA review
+- now: Studio #201 chain resuming (Batch AA); Meem uploads resuming per owner order
 - done: #116-#200 ALL DONE (85 topics)
 - next: #201 chain once owner reviews Batch AA prompts (#201-#205)
 - queue: #201-#371 pending (171 topics)
