@@ -100,12 +100,12 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMuse"></i><span id="tMuse">Checking</span></div>
   <div id="muse-state">
-   <div class="row"><b>Doing now</b>#197 ALL DONE (flipped in Notion 22:00 scan); #198 4/4 verified at +20m, All Done flip awaits +30m confirmations</div>
-   <div class="row"><b>Last completed</b>#197 ALL DONE (26 Nov ~21:00); #196 ALL DONE (24 Nov 11:40); #195 ALL DONE (24 Nov 06:41)</div>
-   <div class="row"><b>Up next</b>#198 +30m confirmations (22:12/22:20), then #199 chain (SHORT prompts)</div>
-   <div class="row"><b>In queue</b>Batch Z prompts (#199–#200) written short; 174 topics remain (#198–#371)</div>
+   <div class="row"><b>Doing now</b>#203 4/4 verified at +20m (21:21–21:56); +30m checks 22:01–22:31 in flight; #198–#202 flipped All Done in Notion (22:00 scan)</div>
+   <div class="row"><b>Last completed</b>#202 ALL DONE (27 Nov ~20:26); #201 ALL DONE (27 Nov ~17:22); #200 ALL DONE (27 Nov ~02:05)</div>
+   <div class="row"><b>Up next</b>#203 +30m confirmations, then #204 chain (SHORT prompts)</div>
+   <div class="row"><b>In queue</b>Batch AA prompts (#204–#205); 169 Not started rows (#204–#371 + Mental Health held)</div>
   </div>
-  <div class="src">Source: GitHub content.md, snapshot rev 157, 26 Nov 22:09 PKT</div>
+  <div class="src">Source: GitHub content.md, snapshot rev 179, 27 Nov 22:18 PKT</div>
  </div>
 </section>
 
@@ -113,28 +113,28 @@ hr{border:0;border-top:1px solid var(--line);margin:12px 0}
  <div class="cb">
   <div class="health"><i class="dot" id="dMeem"></i><span id="tMeem">Checking</span></div>
   <div id="meem-state">
-   <div class="row"><b>Doing now</b>20:58 check 26 Nov: no new Activity Log rows since Log 1320; checkpoint Log 1321; tokens 44% used</div>
-   <div class="row"><b>Last completed</b>#131 Video published 8/8; Q07 publish received (Log 1208)</div>
-   <div class="row"><b>Up next</b>Hold until owner lifts stop order; next GitHub check 23:00 PKT</div>
-   <div class="row"><b>In queue</b>#137–#196 held downstream; #197–#371 pending; Part 25 build parked</div>
+   <div class="row"><b>Doing now</b>21:00 check 27 Nov: #137 Audio+Video published 8/8 (Logs 1332/1333); stop order LIFTED, uploads resumed at speed</div>
+   <div class="row"><b>Last completed</b>#137 Audio+Video published (27 Nov); #132 Video published (27 Nov 17:33, 8:12, 8/8)</div>
+   <div class="row"><b>Up next</b>#138–#144 in queue order, oldest first; next GitHub check 23:00 PKT</div>
+   <div class="row"><b>In queue</b>#138–#144 next uploads; #145 Audio; An'am 21–25</div>
   </div>
-  <div class="row"><b>Posts waiting for QA</b>None — last post U31 (#131 Video) delivered and closed</div>
-  <div class="src">Source: GitHub uploader.md, snapshot rev 88, 26 Nov 20:58 PKT</div>
+  <div class="row"><b>Posts waiting for QA</b>U39 (#137 Audio) + U40 (#137 Video) — QA-approved by Muse 22:00, ready for owner delivery</div>
+  <div class="src">Source: GitHub uploader.md, snapshot rev 105, 27 Nov 21:00 PKT</div>
  </div>
 </section>
 
 <section class="card" data-id="tokens" data-title="Tokens and forecast">
  <div class="cb"><div id="tokens"></div>
-  <hr><div class="row"><b>NotebookLM</b>#197 ALL DONE, #198 4/4 verified at +20m (82 topics). All Done flip after +30m confirmations.</div>
-  <div class="src">Usage figures are from the 26 Nov 22:09 PKT snapshot. Muse live 22:09; Meem fresh check 20:58.</div></div>
+  <hr><div class="row"><b>NotebookLM</b>#198–#202 ALL DONE (87 topics, #116–#202). #203 4/4 verified at +20m; +30m checks in flight.</div>
+  <div class="src">Usage figures are from the 27 Nov 22:18 PKT snapshot. Muse live 22:18; Meem fresh check 21:00.</div></div>
 </section>
 
 <section class="card" data-id="feed" data-title="Recent activity">
  <div class="cb"><ul class="feed" id="feed">
-  <li>#198 4/4 verified at +20m — all formats complete; All Done flip awaits +30m confirmations<time>Muse, 26 Nov 22:03 PKT</time></li>
-  <li>#197 ALL DONE — all 4 formats verified<time>Muse, 26 Nov 21:00 PKT</time></li>
-  <li>#196 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 11:40 PKT</time></li>
-  <li>#195 ALL DONE — all 4 formats verified<time>Muse, 24 Nov 06:41 PKT</time></li></ul>
+  <li>#203 4/4 verified at +20m — all formats complete; +30m checks in flight<time>Muse, 27 Nov 21:56 PKT</time></li>
+  <li>#137 Audio+Video published 8/8<time>Meem, 27 Nov 20:59 PKT</time></li>
+  <li>#202 ALL DONE — all 4 formats verified<time>Muse, 27 Nov 20:26 PKT</time></li>
+  <li>#132 Video published 8/8<time>Meem, 27 Nov 17:33 PKT</time></li></ul>
   <div class="src" id="feedsrc">Snapshot. Shows the latest GitHub commits when the repository is readable.</div></div>
 </section>
 
@@ -206,9 +206,9 @@ $("bReset").onclick=function(){order=ids.slice();LAY={order:[],closed:[]};jset("
 applyLay();
 
 /* agent health + tokens + alerts */
-var SEEN={muse:new Date("2026-11-26T22:09:00+05:00"),meem:new Date("2026-11-26T20:58:00+05:00")};
-var ASOF=new Date("2026-11-26T22:09:00+05:00");
-var TOK=[{n:"Muse",pct:100,x:"Add-on: 3% used, 7.7B left",reset:"2026-11-27T04:44:00+05:00"},{n:"Meem",pct:44,x:"56% of weekly allowance left (live 26 Nov 12:05)",reset:"2026-11-21T00:45:00+05:00"}];
+var SEEN={muse:new Date("2026-11-27T22:18:00+05:00"),meem:new Date("2026-11-27T21:00:00+05:00")};
+var ASOF=new Date("2026-11-27T22:18:00+05:00");
+var TOK=[{n:"Muse",pct:8,x:"Add-on: 3% used, 7.7B left",reset:"2026-12-04T04:50:00+05:00"},{n:"Meem",pct:72,x:"28% of weekly allowance left (live 27 Nov 12:05)",reset:"2026-11-28T00:58:00+05:00"}];
 var QA_PENDING=[];
 function evaluate(){var A=[],now=new Date(),th="";
  [["muse","Muse"],["meem","Meem"]].forEach(function(a){var age=now-SEEN[a[0]],h=age/36e5,c=h<3?"ok":h<6?"warn":"bad",l=h<3?"Active":h<6?"Quiet":"Silent";
