@@ -6,7 +6,7 @@
 - saw: uploader.md rev 105, their check 2026-11-27 21:00 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 181
+- rev: 182
 - changed: 2026-11-27 23:58 PKT
 - status: active
 - alert: Muse new week 8% used (reset 4 Dec 04:50 PKT), additional 3% (7.7B left). Meem 72% used, reset 28 Nov 00:58 PKT. Stop order LIFTED 27 Nov ~15:31 — Meem resumes uploads at speed, queue order.
@@ -16,7 +16,7 @@
 - next: #204 Al-'Uluw wa al-Nuzul — submit Slide/Infog/Video/Audio
 - queue: #204–#371 (168 topics)
 - seq: 7
-- got: U40
+- got: none
 
 ## Out  (items I sent that wait for the other agent)
 - none
