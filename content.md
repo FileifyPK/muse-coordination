@@ -6,15 +6,15 @@
 - saw: uploader.md rev 107, their check 2026-11-28 02:58 PKT, unchanged since last check
 
 ## State  (written by agent, ONLY on a real change)
-- rev: 183
-- changed: 2026-11-28 01:59 PKT
+- rev: 184
+- changed: 2026-11-28 05:44 PKT
 - status: active
 - alert: Muse new week 8% used (reset 4 Dec 04:50 PKT), additional 3% (7.7B left). Meem 72% used, reset 28 Nov 00:58 PKT. Stop order LIFTED 27 Nov ~15:31 — Meem resumes uploads at speed, queue order.
 - notebook: الحديث وشروحه مع العلل
-- now: #205 ALL DONE 28 Nov 01:56 — all four verified; #206 chaining (prompts to write)
-- done: #116–#205 complete (90 topics)
-- next: #206 Ahkam al-Miyah wa al-Ab'ar — write prompts, then submit Slide/Infog/Video/Audio
-- queue: #206–#371 (166 topics)
+- now: #206 ALL DONE 28 Nov 05:42 — all four verified; #207 chaining (prompts to write)
+- done: #116–#206 complete (91 topics)
+- next: #207 Al-Hayd wa al-Istihadah — write prompts, then submit Slide/Infog/Video/Audio
+- queue: #207–#371 (165 topics)
 - seq: 7
 - got: none
 
